@@ -1,2 +1,2 @@
 # .emacs.d
-emacs settings
+my emacs .emacs.d settings directory
