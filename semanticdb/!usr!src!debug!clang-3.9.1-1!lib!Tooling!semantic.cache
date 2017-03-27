@@ -1,0 +1,294 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("clang/Tooling/CompilationDatabase.h" include nil nil [545 591])
+            ("clang/Basic/Diagnostic.h" include nil nil [592 627])
+            ("clang/Basic/DiagnosticOptions.h" include nil nil [628 670])
+            ("clang/Driver/Action.h" include nil nil [671 703])
+            ("clang/Driver/Compilation.h" include nil nil [704 741])
+            ("clang/Driver/Driver.h" include nil nil [742 774])
+            ("clang/Driver/DriverDiagnostic.h" include nil nil [775 817])
+            ("clang/Driver/Job.h" include nil nil [818 847])
+            ("clang/Frontend/TextDiagnosticPrinter.h" include nil nil [848 897])
+            ("clang/Tooling/CompilationDatabasePluginRegistry.h" include nil nil [898 958])
+            ("clang/Tooling/Tooling.h" include nil nil [959 993])
+            ("llvm/ADT/SmallString.h" include nil nil [994 1027])
+            ("llvm/Option/Arg.h" include nil nil [1028 1056])
+            ("llvm/Support/Host.h" include nil nil [1057 1087])
+            ("llvm/Support/Path.h" include nil nil [1088 1118])
+            ("sstream" include (:system-flag t) nil [1119 1137])
+            ("system_error" include (:system-flag t) nil [1138 1161])
+            ("clang" using (:type ("clang" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1162 1184])
+            ("tooling" using (:type ("tooling" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1185 1209])
+            ("CompilationDatabase" function
+               (:destructor-flag t
+                :parent "CompilationDatabase"
+                :type "void")
+                nil [1211 1257])
+            ("loadFromDirectory" function
+               (:parent "CompilationDatabase"
+                :arguments 
+                  ( ("BuildDirectory" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1335 1360])
+                    ("ErrorMessage" variable
+                       (:reference 1
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1400 1426]))                  
+                :type ("std::unique_ptr" type
+                     (:template-specifier 
+                        ( ("CompilationDatabase" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [1259 2037])
+            ("findCompilationDatabaseFromDirectory" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("Directory" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2120 2140])
+                    ("ErrorMessage" variable
+                       (:reference 1
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2178 2204]))                  
+                :type ("std::unique_ptr" type
+                     (:template-specifier 
+                        ( ("CompilationDatabase" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [2039 2815])
+            ("autoDetectFromSource" function
+               (:parent "CompilationDatabase"
+                :arguments 
+                  ( ("SourceFile" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2896 2917])
+                    ("ErrorMessage" variable
+                       (:reference 1
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2960 2986]))                  
+                :type ("std::unique_ptr" type
+                     (:template-specifier 
+                        ( ("CompilationDatabase" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [2817 3401])
+            ("autoDetectFromDirectory" function
+               (:parent "CompilationDatabase"
+                :arguments 
+                  ( ("SourceDir" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3485 3505])
+                    ("ErrorMessage" variable
+                       (:reference 1
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3551 3577]))                  
+                :type ("std::unique_ptr" type
+                     (:template-specifier 
+                        ( ("CompilationDatabase" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [3403 3931])
+            ("CompilationDatabasePlugin" function
+               (:destructor-flag t
+                :parent "CompilationDatabasePlugin"
+                :type "void")
+                nil [3933 3991])
+            ("unnamed" type
+               (:members 
+                  ( ("CompileJobAnalyzer" type
+                       (:members 
+                          ( ("run" function
+                               (:arguments 
+                                  ( ("A" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("driver::Action" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4175 4199]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4166 4228])
+                            ("Inputs" variable (:type ("SmallVector" type
+                                 (:template-specifier 
+                                    ( ("std::string" type nil nil nil)
+                                      ("2"))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [4232 4267])
+                            ("private" label nil (reparse-symbol classsubparts) [4269 4277])
+                            ("runImpl" function
+                               (:arguments 
+                                  ( ("A" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("driver::Action" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4294 4318])
+                                    ("Collect" variable (:type "bool") (reparse-symbol arg-sub-list) [4319 4332]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4281 4845]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [4136 4848])
+                    ("UnusedInputDiagConsumer" type
+                       (:superclasses 
+                          ( ("DiagnosticConsumer" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [5074 5081])
+                            ("UnusedInputDiagConsumer" function
+                               (:constructor-flag t
+                                :type ("UnusedInputDiagConsumer" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5084 5129])
+                            ("UnusedInputDiagConsumer" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("Other" variable
+                                       (:pointer 1
+                                        :type ("DiagnosticConsumer" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5265 5291]))                                  
+                                :type ("UnusedInputDiagConsumer" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5241 5309])
+                            ("Other" variable
+                               (:pointer 1
+                                :type ("DiagnosticConsumer" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5696 5722])
+                            ("UnusedInputs" variable (:type ("SmallVector" type
+                                 (:template-specifier 
+                                    ( ("std::string" type nil nil nil)
+                                      ("2"))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [5725 5766]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [5014 5769])
+                    ("MatchesAny" type
+                       (:members 
+                          ( ("MatchesAny" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("Arr" variable (:type ("ArrayRef" type
+                                         (:template-specifier 
+                                            ( ("std::string" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [5911 5937]))                                  
+                                :type ("MatchesAny" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [5900 5951])
+                            ("()" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("S" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5971 5983]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [5954 6121])
+                            ("private" label nil (reparse-symbol classsubparts) [6122 6130])
+                            ("Arr" variable (:type ("ArrayRef" type
+                                 (:template-specifier 
+                                    ( ("std::string" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [6133 6159]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [5878 6162]))                  
+                :type "namespace")
+                nil [3993 6164])
+            ("stripPositionalArgs" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("Args" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("char" type
+                                 (:pointer 1
+                                  :constant-flag t)
+                                  nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [7194 7225])
+                    ("Result" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7258 7291]))                  
+                :type "bool")
+                nil [7162 10331])
+            ("loadFromCommandLine" function
+               (:pointer 1
+                :parent "FixedCompilationDatabase"
+                :arguments 
+                  ( ("Argc" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [10410 10420])
+                    ("Argv" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10421 10445])
+                    ("Directory" variable (:type ("Twine" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10446 10462]))                  
+                :type ("FixedCompilationDatabase" type (:type "class") nil nil))
+                nil [10333 10879])
+            ("FixedCompilationDatabase" function
+               (:constructor-flag t
+                :parent "FixedCompilationDatabase"
+                :arguments 
+                  ( ("Directory" variable (:type ("Twine" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10933 10949])
+                    ("CommandLine" variable (:type ("ArrayRef" type
+                         (:template-specifier 
+                            ( ("std::string" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [10950 10984]))                  
+                :type ("FixedCompilationDatabase" type (:type "class") nil nil))
+                nil [10881 11278])
+            ("getCompileCommands" function
+               (:methodconst-flag t
+                :parent "FixedCompilationDatabase"
+                :arguments 
+                  ( ("FilePath" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11353 11372]))                  
+                :type ("std::vector" type
+                     (:template-specifier 
+                        ( ("CompileCommand" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [11280 11532])
+            ("getAllFiles" function
+               (:methodconst-flag t
+                :parent "FixedCompilationDatabase"
+                :type ("std::vector" type
+                     (:template-specifier 
+                        ( ("std::string" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [11534 11645])
+            ("getAllCompileCommands" function
+               (:methodconst-flag t
+                :parent "FixedCompilationDatabase"
+                :type ("std::vector" type
+                     (:template-specifier 
+                        ( ("CompileCommand" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [11647 11774])
+            ("clang" type
+               (:members 
+                  ( ("tooling" type
+                       (:members 
+                          ( ("JSONAnchorSource" variable
+                               (:typemodifiers ("extern" "volatile")
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [11951 11988])
+                            ("JSONAnchorDest" variable
+                               (:default-value "JSONAnchorSource"
+                                :type ("LLVM_ATTRIBUTE_UNUSED" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [12000 12056]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [11794 12059]))                  
+                :type "namespace")
+                nil [11776 12086]))          
+      :file "CompilationDatabase.cpp"
+      :pointmax 12110
+      :fsize 12109
+      :lastmodtime '(22220 45923 0 0)
+      :unmatched-syntax '((INT 11996 . 11999) (STATIC 11989 . 11995) (semantic-list 5428 . 5692) (symbol 5419 . 5427) (semantic-list 5334 . 5418) (symbol 5318 . 5334) (VOID 5313 . 5317))))
+  :file "!usr!src!debug!clang-3.9.1-1!lib!Tooling!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

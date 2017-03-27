@@ -1,0 +1,98 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("MAJOR_VERSION" variable (:constant-flag t) nil [38 51])
+            ("MINOR_VERSION" variable (:constant-flag t) nil [62 75])
+            ("sys/prx.h" include (:system-flag t) nil [79 99])
+            ("sys/exportcplusplus.h" include (:system-flag t) nil [100 132])
+            ("string.h" include (:system-flag t) nil [150 169])
+            ("stdio.h" include (:system-flag t) nil [170 188])
+            ("BUILDING_" variable (:constant-flag t) nil [198 207])
+            ("__cxa_pure_virtual" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void")
+                (reparse-symbol extern-c-contents) [1539 1579])
+            ("SYS_LIB_DECLARE" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable (:type ("LIBNAME" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [996 1004])
+                    ("" variable (:type ("SYS_LIB_AUTO_EXPORT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1006 1027])
+                    ("" variable (:type ("SYS_LIB_WEAK_IMPORT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1028 1048]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [979 1049])
+            ("_modstop" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("argSize" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [758 773])
+                    ("argBlock" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [774 795]))                  )
+                (reparse-symbol extern-c-contents) [749 881])
+            ("_modstart" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("argSize" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [447 462])
+                    ("argBlock" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [463 484]))                  )
+                (reparse-symbol extern-c-contents) [437 734])
+            ("__fini" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [408 422])
+            ("__init" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [382 396])
+            ("SYS_MODULE_STOP" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable (:type ("LIBNAME" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [351 359])
+                    ("" variable (:type ("_modstop" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [359 368]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [334 369])
+            ("SYS_MODULE_START" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable (:type ("LIBNAME" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [314 322])
+                    ("" variable (:type ("_modstart" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [322 332]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [296 333])
+            ("SYS_MODULE_INFO" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable (:type ("LIBNAME" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [251 259]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [234 294]))          
+      :file "module-template.cpp"
+      :pointmax 11960
+      :fsize 12189
+      :lastmodtime '(21345 3739 974728 500000)
+      :unmatched-syntax '((punctuation 1026 . 1027) (punctuation 1003 . 1004) (punctuation 995 . 996) (punctuation 748 . 749) (symbol 741 . 748) (punctuation 740 . 741) (INT 736 . 739) (punctuation 436 . 437) (symbol 429 . 436) (punctuation 428 . 429) (INT 424 . 427) (punctuation 358 . 359) (punctuation 350 . 351) (punctuation 321 . 322) (punctuation 313 . 314) (number "0" 279 . 292) (number "1" 264 . 277) (number 261 . 262) (punctuation 258 . 259) (punctuation 250 . 251))
+      :lexical-table 
+        '(("MAJOR_VERSION" . ((number "1" 52 . 53)))
+          ("BUILDING_" . 
+              ((punctuation "@" 207 . 208) (symbol "LIBNAME" 208 . 215) (punctuation "@" 215 . 216) (number "1" 217 . 218)))
+          ("MINOR_VERSION" . ((number "0" 76 . 77)))
+          )
+))
+  :file "!cygdrive!c!nuanti-webkit_PS3_orig!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

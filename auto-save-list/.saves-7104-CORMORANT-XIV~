@@ -1,0 +1,10 @@
+/usr/src/debug/clang-3.9.1-1/lib/Tooling/CompilationDatabase.cpp
+/usr/src/debug/clang-3.9.1-1/lib/Tooling/#CompilationDatabase.cpp#
+/usr/src/debug/clang-3.9.1-1/tools/libclang/CXCompilationDatabase.cpp
+/usr/src/debug/clang-3.9.1-1/tools/libclang/#CXCompilationDatabase.cpp#
+/home/Administrator/rtags/src/Server.cpp
+/home/Administrator/rtags/src/#Server.cpp#
+/home/Administrator/rtags/src/rdm.cpp
+/home/Administrator/rtags/src/#rdm.cpp#
+/home/Administrator/rtags/src/rct/rct/EventLoop.cpp
+/home/Administrator/rtags/src/rct/rct/#EventLoop.cpp#

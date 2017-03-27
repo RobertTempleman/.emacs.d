@@ -1,0 +1,235 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("assert.h" include (:system-flag t) nil [1486 1505])
+            ("sys/types.h" include (:system-flag t) nil [1506 1528])
+            ("limits.h" include (:system-flag t) nil [1529 1548])
+            ("errno.h" include (:system-flag t) nil [1549 1567])
+            ("stdio.h" include (:system-flag t) nil [1568 1586])
+            ("stdlib.h" include (:system-flag t) nil [1587 1606])
+            ("stddef.h" include (:system-flag t) nil [1607 1626])
+            ("unistd.h" include (:system-flag t) nil [1627 1646])
+            ("string.h" include (:system-flag t) nil [1647 1666])
+            ("arpa/inet.h" include (:system-flag t) nil [1713 1735])
+            ("sys/socket.h" include (:system-flag t) nil [1736 1759])
+            ("sys/un.h" include (:system-flag t) nil [1760 1779])
+            ("netinet/in.h" include (:system-flag t) nil [1780 1803])
+            ("netinet/tcp.h" include (:system-flag t) nil [1804 1828])
+            ("fcntl.h" include (:system-flag t) nil [1829 1847])
+            ("netdb.h" include (:system-flag t) nil [1848 1866])
+            ("xcb.h" include nil nil [1888 1904])
+            ("xcbext.h" include nil nil [1905 1924])
+            ("xcbint.h" include nil nil [1925 1944])
+            ("xcb_popcount" function
+               (:arguments 
+                  ( ("mask" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2135 2149]))                  
+                :type "int")
+                nil [2118 2301])
+            ("xcb_sumof" function
+               (:arguments 
+                  ( ("list" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2317 2331])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [2332 2340]))                  
+                :type "int")
+                nil [2303 2429])
+            ("_xcb_parse_display" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3562 3579])
+                    ("host" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3580 3592])
+                    ("protocol" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3593 3609])
+                    ("displayp" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [3632 3646])
+                    ("screenp" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [3647 3660]))                  
+                :type "int")
+                nil [3532 5238])
+            ("xcb_parse_display" function
+               (:arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5262 5279])
+                    ("host" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5280 5292])
+                    ("displayp" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [5293 5307])
+                    ("screenp" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [5337 5350]))                  
+                :type "int")
+                nil [5240 5422])
+            ("_xcb_open_tcp" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("host" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5449 5466])
+                    ("protocol" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5467 5482])
+                    ("port" variable
+                       (:constant-flag t
+                        :type "unsigned short")
+                        (reparse-symbol arg-sub-list) [5483 5509]))                  
+                :type "int")
+                nil [5424 5510])
+            ("_xcb_open_unix" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("protocol" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5552 5567])
+                    ("file" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5568 5585]))                  
+                :type "int")
+                nil [5526 5586])
+            ("_xcb_open" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("host" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5746 5763])
+                    ("protocol" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5764 5779])
+                    ("display" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [5780 5798]))                  
+                :type "int")
+                nil [5725 8047])
+            ("_xcb_socket" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("family" variable (:type "int") (reparse-symbol arg-sub-list) [8072 8083])
+                    ("type" variable (:type "int") (reparse-symbol arg-sub-list) [8084 8093])
+                    ("proto" variable (:type "int") (reparse-symbol arg-sub-list) [8094 8104]))                  
+                :type "int")
+                nil [8049 8394])
+            ("_xcb_do_connect" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [8424 8431])
+                    ("addr" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("sockaddr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8432 8460])
+                    ("addrlen" variable (:type "int") (reparse-symbol arg-sub-list) [8461 8473]))                  
+                :type "int")
+                nil [8397 8695])
+            ("_xcb_open_tcp" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("host" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8722 8739])
+                    ("protocol" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8740 8755])
+                    ("port" variable
+                       (:constant-flag t
+                        :type "unsigned short")
+                        (reparse-symbol arg-sub-list) [8756 8782]))                  
+                :type "int")
+                nil [8697 10821])
+            ("_xcb_open_unix" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("protocol" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10864 10879])
+                    ("file" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10880 10897]))                  
+                :type "int")
+                nil [10838 11585])
+            ("xcb_connect" function
+               (:pointer 1
+                :arguments 
+                  ( ("displayname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12307 12331])
+                    ("screenp" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [12332 12345]))                  
+                :type ("xcb_connection_t" type (:type "class") nil nil))
+                nil [12277 12427])
+            ("xcb_connect_to_display_with_auth_info" function
+               (:pointer 1
+                :arguments 
+                  ( ("displayname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12485 12509])
+                    ("auth" variable
+                       (:pointer 1
+                        :type ("xcb_auth_info_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12510 12532])
+                    ("screenp" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [12533 12546]))                  
+                :type ("xcb_connection_t" type (:type "class") nil nil))
+                nil [12429 13870]))          
+      :file "xcb_util.c"
+      :pointmax 13871
+      :fsize 13870
+      :lastmodtime '(22320 46735 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!src!debug!libxcb-1.12-1!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

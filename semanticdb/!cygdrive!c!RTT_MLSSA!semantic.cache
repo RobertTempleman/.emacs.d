@@ -1,0 +1,1347 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("stdlib.h" include (:system-flag t) nil [1 20])
+            ("stdio.h" include (:system-flag t) nil [21 39])
+            ("string.h" include (:system-flag t) nil [40 59])
+            ("xcb/xcb.h" include (:system-flag t) nil [61 81])
+            ("rtt_1.h" include nil nil [82 100])
+            ("float" include (:system-flag t) nil [101 117])
+            ("vector" include (:system-flag t) nil [118 135])
+            ("std::vector" using (:type ("std::vector" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [139 157])
+            ("WIDTH" variable (:constant-flag t) nil [167 172])
+            ("HEIGHT" variable (:constant-flag t) nil [185 191])
+            ("gc_font_get" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("xcb_connection_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [229 249])
+                    ("screen" variable
+                       (:pointer 1
+                        :type ("xcb_screen_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [279 304])
+                    ("window" variable (:type ("xcb_window_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [334 359])
+                    ("font_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [389 417]))                  
+                :type ("xcb_gc_t" type (:type "class") nil nil))
+                nil [200 418])
+            ("button_draw" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("xcb_connection_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [445 465])
+                    ("screen" variable
+                       (:pointer 1
+                        :type ("xcb_screen_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [491 516])
+                    ("window" variable (:type ("xcb_window_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [542 567])
+                    ("x1" variable (:type ("int16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [593 614])
+                    ("y1" variable (:type ("int16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [640 661])
+                    ("label" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [687 711]))                  
+                :type "void")
+                nil [420 712])
+            ("text_draw" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("xcb_connection_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [737 757])
+                    ("screen" variable
+                       (:pointer 1
+                        :type ("xcb_screen_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [781 806])
+                    ("window" variable (:type ("xcb_window_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [830 855])
+                    ("x1" variable (:type ("int16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [879 900])
+                    ("y1" variable (:type ("int16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [924 945])
+                    ("label" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [969 993]))                  
+                :type "void")
+                nil [714 994])
+            ("cursor_set" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("xcb_connection_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1020 1040])
+                    ("screen" variable
+                       (:pointer 1
+                        :type ("xcb_screen_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1065 1090])
+                    ("window" variable (:type ("xcb_window_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1115 1140])
+                    ("cursor_id" variable (:type "int") (reparse-symbol arg-sub-list) [1165 1193]))                  
+                :type "void")
+                nil [996 1194])
+            ("button_draw" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("xcb_connection_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1222 1242])
+                    ("screen" variable
+                       (:pointer 1
+                        :type ("xcb_screen_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1256 1281])
+                    ("window" variable (:type ("xcb_window_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1295 1320])
+                    ("x1" variable (:type ("int16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1334 1355])
+                    ("y1" variable (:type ("int16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1369 1390])
+                    ("label" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1404 1428]))                  
+                :type "void")
+                nil [1197 3099])
+            ("text_draw" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("xcb_connection_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3124 3144])
+                    ("screen" variable
+                       (:pointer 1
+                        :type ("xcb_screen_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3156 3181])
+                    ("window" variable (:type ("xcb_window_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3193 3218])
+                    ("x1" variable (:type ("int16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3230 3251])
+                    ("y1" variable (:type ("int16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3263 3284])
+                    ("label" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3296 3320]))                  
+                :type "void")
+                nil [3101 4113])
+            ("gc_font_get" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("xcb_connection_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4144 4164])
+                    ("screen" variable
+                       (:pointer 1
+                        :type ("xcb_screen_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4178 4203])
+                    ("window" variable (:type ("xcb_window_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4217 4242])
+                    ("font_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4256 4284]))                  
+                :type ("xcb_gc_t" type (:type "class") nil nil))
+                nil [4115 5563])
+            ("cursor_set" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("xcb_connection_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5589 5609])
+                    ("screen" variable
+                       (:pointer 1
+                        :type ("xcb_screen_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5622 5647])
+                    ("window" variable (:type ("xcb_window_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5660 5685])
+                    ("cursor_id" variable (:type "int") (reparse-symbol arg-sub-list) [5698 5726]))                  
+                :type "void")
+                nil [5565 7411])
+            ("main" function (:type "int") nil [7413 11056]))          
+      :file "rtt_test.cpp"
+      :pointmax 11057
+      :fsize 11056
+      :lastmodtime '(22720 33042 649019 600000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("HEIGHT" . ((number "512" 192 . 195)))
+          ("WIDTH" . ((number "640" 173 . 176)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("INCLUDED_RTT_2" variable (:constant-flag t) nil [32 46])
+            ("stdlib.h" include (:system-flag t) nil [47 66])
+            ("stdio.h" include (:system-flag t) nil [67 85])
+            ("string.h" include (:system-flag t) nil [86 105])
+            ("csignal" include (:system-flag t) nil [106 124])
+            ("iostream" include (:system-flag t) nil [125 144])
+            ("inttypes.h" include (:system-flag t) nil [145 166])
+            ("xcb/xcb.h" include (:system-flag t) nil [167 187])
+            ("xcb/xproto.h" include (:system-flag t) nil [188 211])
+            ("u8" type
+               (:typedef ("unsigned char")
+                :type "typedef")
+                nil [213 239])
+            ("s8" type
+               (:typedef ("char")
+                :type "typedef")
+                nil [240 257])
+            ("u16" type
+               (:typedef ("unsigned short")
+                :type "typedef")
+                nil [258 286])
+            ("s16" type
+               (:typedef ("short")
+                :type "typedef")
+                nil [287 306])
+            ("u32" type
+               (:typedef ("unsigned long")
+                :type "typedef")
+                nil [307 334])
+            ("s32" type
+               (:typedef ("long")
+                :type "typedef")
+                nil [335 353])
+            ("u64" type
+               (:typedef ("unsigned long long")
+                :type "typedef")
+                nil [354 386])
+            ("s64" type
+               (:typedef ("long long")
+                :type "typedef")
+                nil [387 410])
+            ("draw_button_stuff" function
+               (:prototype-flag t
+                :type "void")
+                nil [412 437])
+            ("draw_stuff" function
+               (:prototype-flag t
+                :type "void")
+                nil [438 456])
+            ("draw_spinner" function
+               (:prototype-flag t
+                :type "void")
+                nil [457 477])
+            ("MAX_STRING_LENGTH" variable (:constant-flag t) nil [487 504])
+            ("button_data" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [528 535])
+                    ("button_data" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("_txt" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [550 567])
+                            ("_x" variable (:type ("s32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [567 574])
+                            ("_y" variable (:type ("s32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [574 581])
+                            ("_w" variable (:type ("s32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [581 588])
+                            ("_h" variable (:type ("s32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [588 595]))                          
+                        :type ("button_data" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [538 756])
+                    ("txt" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [759 769])
+                    ("x" variable (:type ("s32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [772 778])
+                    ("y" variable (:type ("s32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [781 787])
+                    ("w" variable (:type ("s32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [790 796])
+                    ("h" variable (:type ("s32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [799 805])
+                    ("check_button" function
+                       (:arguments 
+                          ( ("x_test" variable (:type "int") (reparse-symbol arg-sub-list) [827 838])
+                            ("y_test" variable (:type "int") (reparse-symbol arg-sub-list) [838 849]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [809 958]))                  
+                :type "class")
+                nil [509 961]))          
+      :file "rtt_2.h"
+      :pointmax 970
+      :fsize 969
+      :lastmodtime '(22630 29615 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("MAX_STRING_LENGTH" . ((number "64" 505 . 507)))
+          ("INCLUDED_RTT_2")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("rtt_2.h" include nil nil [1 19])
+            ("doit_all.h" include nil nil [20 41])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [43 63])
+            ("WIDTH" variable (:constant-flag t) nil [73 78])
+            ("HEIGHT" variable (:constant-flag t) nil [91 97])
+            ("connection" variable
+               (:pointer 1
+                :type ("xcb_connection_t" type (:type "class") nil nil))
+                nil [103 132])
+            ("window" variable (:type ("xcb_drawable_t" type (:type "class") nil nil)) nil [133 158])
+            ("foreground" variable (:type ("xcb_gcontext_t" type (:type "class") nil nil)) nil [159 188])
+            ("screen" variable
+               (:pointer 1
+                :type ("xcb_screen_t" type (:type "class") nil nil))
+                nil [189 214])
+            ("text_message" variable
+               (:dereference 1
+                :default-value "\"* running...\""
+                :type "char")
+                nil [216 253])
+            ("gc_font_get" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("xcb_connection_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [284 304])
+                    ("screen" variable
+                       (:pointer 1
+                        :type ("xcb_screen_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [304 325])
+                    ("window" variable (:type ("xcb_window_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [325 345])
+                    ("font_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [345 367]))                  
+                :type ("xcb_gc_t" type (:type "class") nil nil))
+                nil [256 368])
+            ("button_draw" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("xcb_connection_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [397 417])
+                    ("screen" variable
+                       (:pointer 1
+                        :type ("xcb_screen_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [417 438])
+                    ("window" variable (:type ("xcb_window_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [438 458])
+                    ("x1" variable (:type ("int16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [458 469])
+                    ("y1" variable (:type ("int16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [469 480])
+                    ("label" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [480 497]))                  
+                :type "void")
+                nil [369 498])
+            ("text_draw" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("xcb_connection_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [527 547])
+                    ("screen" variable
+                       (:pointer 1
+                        :type ("xcb_screen_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [547 568])
+                    ("window" variable (:type ("xcb_window_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [568 588])
+                    ("x1" variable (:type ("int16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [588 599])
+                    ("y1" variable (:type ("int16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [599 610])
+                    ("label" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [610 627]))                  
+                :type "void")
+                nil [499 628])
+            ("cursor_set" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("xcb_connection_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [657 677])
+                    ("screen" variable
+                       (:pointer 1
+                        :type ("xcb_screen_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [677 698])
+                    ("window" variable (:type ("xcb_window_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [698 718])
+                    ("cursor_id" variable (:type "int") (reparse-symbol arg-sub-list) [718 732]))                  
+                :type "void")
+                nil [629 733])
+            ("NUM_BUTTONS" variable (:constant-flag t) nil [743 754])
+            ("INDEX_START_BUTTON" variable (:constant-flag t) nil [766 784])
+            ("INDEX_SINGLE_PLAY_BUTTON" variable (:constant-flag t) nil [795 819])
+            ("INDEX_SHUTDOWN_AUDIO_BUTTON" variable (:constant-flag t) nil [830 857])
+            ("buttons" variable
+               (:dereference 1
+                :default-value "{
+  button_data(\"Generate MLS sequence\",130,24,100,20),
+  button_data(\"Single MLS playback\",300,24,100,20),
+  button_data(\"Shutdown audio\",300,44,100,20)
+}"
+                :type ("button_data" type (:type "class") nil nil))
+                nil [861 1050])
+            ("spinner_pos" variable
+               (:default-value "{10,10}"
+                :type ("xcb_point_t" type (:type "class") nil nil))
+                nil [1052 1084])
+            ("spinner_font_pixel_size" variable
+               (:default-value "10"
+                :type "int")
+                nil [1085 1116])
+            ("RTT_EXPOSE_NO_ACTION" variable (:constant-flag t) nil [1125 1145])
+            ("RTT_EXPOSE_INDEX_SPINNER" variable (:constant-flag t) nil [1156 1180])
+            ("invalidate" function
+               (:arguments 
+                  ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [1202 1208])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [1208 1214])
+                    ("w" variable (:type "int") (reparse-symbol arg-sub-list) [1214 1220])
+                    ("h" variable (:type "int") (reparse-symbol arg-sub-list) [1220 1226]))                  
+                :type "void")
+                nil [1186 1624])
+            ("spinner_char" variable
+               (:default-value "0"
+                :type "int")
+                nil [1628 1647])
+            ("s_chars" variable
+               (:dereference 1
+                :default-value "\"|/-\\\\\""
+                :type "char")
+                nil [1648 1671])
+            ("handler" function
+               (:arguments 
+                  ( ("val" variable (:type ("sigval" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1686 1697]))                  
+                :type "void")
+                nil [1673 1913])
+            ("tid" variable (:type ("timer_t" type (:type "class") nil nil)) nil [1917 1929])
+            ("set_timer" function (:type "void") nil [1931 2216])
+            ("button_draw" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("xcb_connection_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2244 2264])
+                    ("screen" variable
+                       (:pointer 1
+                        :type ("xcb_screen_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2264 2285])
+                    ("window" variable (:type ("xcb_window_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2285 2305])
+                    ("x1" variable (:type ("int16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2305 2316])
+                    ("y1" variable (:type ("int16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2316 2327])
+                    ("label" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2327 2345]))                  
+                :type "void")
+                nil [2220 3767])
+            ("text_draw" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("connection" variable
+                       (:pointer 1
+                        :type ("xcb_connection_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3793 3822])
+                    ("screen" variable
+                       (:pointer 1
+                        :type ("xcb_screen_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3822 3843])
+                    ("window" variable (:type ("xcb_window_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3843 3863])
+                    ("x1" variable (:type ("int16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3863 3874])
+                    ("y1" variable (:type ("int16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3874 3885])
+                    ("label" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3885 3903]))                  
+                :type "void")
+                nil [3771 4633])
+            ("gc_font_get" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("connection" variable
+                       (:pointer 1
+                        :type ("xcb_connection_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4665 4694])
+                    ("screen" variable
+                       (:pointer 1
+                        :type ("xcb_screen_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4694 4715])
+                    ("window" variable (:type ("xcb_window_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4715 4735])
+                    ("font_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4735 4757]))                  
+                :type ("xcb_gc_t" type (:type "class") nil nil))
+                nil [4637 6012])
+            ("cursor_set" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("connection" variable
+                       (:pointer 1
+                        :type ("xcb_connection_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6039 6068])
+                    ("screen" variable
+                       (:pointer 1
+                        :type ("xcb_screen_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6068 6089])
+                    ("window" variable (:type ("xcb_window_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6089 6109])
+                    ("cursor_id" variable (:type "int") (reparse-symbol arg-sub-list) [6109 6123]))                  
+                :type "void")
+                nil [6016 7690])
+            ("line_start" variable
+               (:default-value "{0,0}"
+                :type ("xcb_point_t" type (:type "class") nil nil))
+                nil [7741 7770])
+            ("line_end" variable
+               (:default-value "{200,200}"
+                :type ("xcb_point_t" type (:type "class") nil nil))
+                nil [7771 7802])
+            ("points" variable
+               (:dereference 1
+                :default-value "{
+  {10,10},
+  {10,20},
+  {20,10},
+  {20,20}}"
+                :type ("xcb_point_t" type (:type "class") nil nil))
+                nil [7830 7897])
+            ("polyline" variable
+               (:dereference 1
+                :default-value "{
+  {50,10},
+  {5,20},     /* rest of points are relative */
+  {25,-20},
+  {10,10}}"
+                :type ("xcb_point_t" type (:type "class") nil nil))
+                nil [7899 8006])
+            ("segments" variable
+               (:dereference 1
+                :default-value "{
+  {100,10,140,30},
+  {110,25,130,60}}"
+                :type ("xcb_segment_t" type (:type "class") nil nil))
+                nil [8008 8073])
+            ("rectangles" variable
+               (:dereference 1
+                :default-value "{
+  {10,50,40,20},
+  {80,50,10,40}}"
+                :type ("xcb_rectangle_t" type (:type "class") nil nil))
+                nil [8075 8140])
+            ("arcs" variable
+               (:dereference 1
+                :default-value "{
+  {10,100,60,40,0,90<<6},
+  {90,100,55,40,0,270<<6}}"
+                :type ("xcb_arc_t" type (:type "class") nil nil))
+                nil [8142 8214])
+            ("main" function (:type "int") nil [8218 13671])
+            ("draw_stuff" function (:type "void") nil [13675 14243])
+            ("draw_button_wrapper" function
+               (:arguments 
+                  ( ("b" variable
+                       (:reference 1
+                        :type ("button_data" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14272 14287]))                  
+                :type "void")
+                nil [14247 14345])
+            ("draw_button_stuff" function (:type "void") nil [14349 14792])
+            ("draw_spinner" function (:type "void") nil [14796 14899]))          
+      :file "rtt_2.cpp"
+      :pointmax 14901
+      :fsize 14900
+      :lastmodtime '(22725 51615 126492 300000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("RTT_EXPOSE_NO_ACTION" . ((number "0" 1146 . 1147)))
+          ("INDEX_START_BUTTON" . ((number "0" 785 . 786)))
+          ("INDEX_SINGLE_PLAY_BUTTON" . ((number "1" 820 . 821)))
+          ("INDEX_SHUTDOWN_AUDIO_BUTTON" . ((number "2" 858 . 859)))
+          ("HEIGHT" . ((number "512" 98 . 101)))
+          ("NUM_BUTTONS" . ((number "3" 755 . 756)))
+          ("WIDTH" . ((number "640" 79 . 82)))
+          ("RTT_EXPOSE_INDEX_SPINNER" . ((number "255" 1181 . 1184)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("rtt_2.h" include nil nil [1 19])
+            ("mls.h" include nil nil [20 36])
+            ("lfsr_polynomial_masks_4" variable
+               (:dereference 1
+                :default-value "{0x9,0xC}"
+                :type ("u32" type (:type "class") nil nil))
+                nil [38 78])
+            ("lfsr_polynomial_masks_5" variable
+               (:dereference 1
+                :default-value "{0x12,0x14,0x17,0x1B,0x1D,0x1E}"
+                :type ("u32" type (:type "class") nil nil))
+                nil [79 141])
+            ("lfsr_polynomial_masks_6" variable
+               (:dereference 1
+                :default-value "{0x21,0x2D,0x30,0x33,0x36,0x39}"
+                :type ("u32" type (:type "class") nil nil))
+                nil [142 204])
+            ("lfsr_polynomial_masks_7" variable
+               (:dereference 1
+                :default-value "{0x41,0x44,0x47,0x48,0x4E,0x53,0x55,0x5C,0x5F,0x60,0x65,0x69,0x6A,0x72,0x77,0x78,0x7B,0x7E}"
+                :type ("u32" type (:type "class") nil nil))
+                nil [205 327])
+            ("lfsr_polynomial_masks_8" variable
+               (:dereference 1
+                :default-value "{0x8E,0x95,0x96,0xA6,0xAF,0xB1,0xB2,0xB4,0xB8,0xC3,0xC6,0xD4,0xE1,0xE7,0xF3,0xFA}"
+                :type ("u32" type (:type "class") nil nil))
+                nil [328 440])
+            ("lfsr_polynomial_masks_9" variable
+               (:dereference 1
+                :default-value "{0x108,0x10D,0x110,0x116,0x119,0x12C,0x12F,0x134,0x137,0x13B,0x13E,0x143,0x14A,0x151,0x152,0x157,0x15B,0x15E,0x167,0x168,0x16D,0x17A,0x17C,0x189,0x18A,0x18F,0x191,0x198,0x19D,0x1A7,0x1AD,0x1B0,0x1B5,0x1B6,0x1B9,0x1BF,0x1C2,0x1C7,0x1DA,0x1DC,0x1E3,0x1E5,0x1E6,0x1EA,0x1EC,0x1F1,0x1F4,0x1FD}"
+                :type ("u32" type (:type "class") nil nil))
+                nil [441 761])
+            ("lfsr_polynomial_masks_10" variable
+               (:dereference 1
+                :default-value "{0x204,0x20D,0x213,0x216,0x232,0x237,0x240,0x245,0x262,0x26B,0x273,0x279,0x27F,0x286,0x28C,0x291,0x298,0x29E,0x2A1,0x2AB,0x2B5,0x2C2,0x2C7,0x2CB,0x2D0,0x2E3,0x2F2,0x2FB,0x2FD,0x309,0x30A,0x312,0x31B,0x321,0x327,0x32D,0x33C,0x33F,0x344,0x35A,0x360,0x369,0x36F,0x37E,0x38B,0x38E,0x390,0x39C,0x3A3,0x3A6,0x3AA,0x3AC,0x3B1,0x3BE,0x3C6,0x3C9,0x3D8,0x3ED,0x3F9,0x3FC}"
+                :type ("u32" type (:type "class") nil nil))
+                nil [762 1155])
+            ("lfsr_polynomial_masks_11" variable
+               (:dereference 1
+                :default-value "{0x402,0x40B,0x415,0x416,0x423,0x431,0x432,0x438,0x43D,0x446,0x44A,0x44F,0x454,0x458,0x467,0x468,0x470,0x473,0x475,0x47A,0x486,0x489,0x492,0x494,0x49D,0x49E,0x4A2,0x4A4,0x4A8,0x4AD,0x4B9,0x4BA,0x4BF,0x4C1,0x4C7,0x4D5,0x4D6,0x4DC,0x4E3,0x4EC,0x4F2,0x4FB,0x500,0x503,0x509,0x50A,0x514,0x524,0x530,0x536,0x53C,0x53F,0x542,0x548,0x54E,0x553,0x555,0x559,0x55A,0x56A,0x56F,0x574,0x577,0x578,0x57D,0x581,0x584,0x588,0x599,0x59F,0x5A0,0x5A5,0x5AC,0x5AF,0x5B2,0x5B7,0x5BE,0x5C3,0x5C5,0x5C9,0x5CA,0x5D7,0x5DB,0x5DE,0x5E4,0x5ED,0x5EE,0x5F3,0x5F6,0x605,0x606,0x60C,0x60F,0x62B,0x630,0x635,0x639,0x642,0x644,0x64B}"
+                :type ("u32" type (:type "class") nil nil))
+                nil [1156 1789])
+            ("lfsr_polynomial_masks_12" variable
+               (:dereference 1
+                :default-value "{0x829,0x834,0x83D,0x83E,0x84C,0x868,0x875,0x883,0x88F,0x891,0x89D,0x8A7,0x8AB,0x8B0,0x8B5,0x8C2,0x8D9,0x8EC,0x8EF,0x906,0x91B,0x91E,0x933,0x939,0x93F,0x95C,0x960,0x965,0x987,0x98E,0x990,0x99C,0x99F,0x9A6,0x9B8,0x9CC,0x9D1,0x9D4,0xA03,0xA18,0xA1B,0xA27,0xA2E,0xA33,0xA3A,0xA53,0xA56,0xA69,0xA87,0xA8E,0xAA6,0xAC9,0xAE2,0xAEB,0xAEE,0xAF5,0xB04,0xB23,0xB2A,0xB2C,0xB52,0xB5E,0xB8A,0xB8C,0xBA1,0xBA2,0xBBA,0xBC4,0xBD6,0xBD9,0xBDF,0xBE0,0xC2B,0xC2E,0xC48,0xC4B,0xC5C,0xC77,0xC8D,0xC9A,0xCA0,0xCB2,0xCBD,0xCC5,0xCD8,0xCDE,0xCE4,0xCE7,0xCF3,0xD0D,0xD15,0xD19,0xD34,0xD45,0xD68,0xD70,0xD7A,0xD85,0xD89,0xD8F}"
+                :type ("u32" type (:type "class") nil nil))
+                nil [1790 2423])
+            ("lfsr_polynomial_masks_13" variable
+               (:dereference 1
+                :default-value "{0x100D,0x1013,0x101A,0x1029,0x1032,0x1037,0x1045,0x1046,0x104F,0x1052,0x1057,0x105D,0x105E,0x1061,0x1064,0x1070,0x1079,0x1086,0x108A,0x1094,0x1097,0x109D,0x10A1,0x10B3,0x10B5,0x10BC,0x10C4,0x10CB,0x10CE,0x10DF,0x10E0,0x10E3,0x10E6,0x10EF,0x10F1,0x10F8,0x10FD,0x110C,0x1112,0x111B,0x111E,0x1121,0x112D,0x112E,0x113C,0x113F,0x1144,0x114B,0x114D,0x1159,0x115F,0x1166,0x1177,0x117B,0x117D,0x1182,0x1193,0x1195,0x11A3,0x11AA,0x11AC,0x11B7,0x11B8,0x11BE,0x11C3,0x11C6,0x11CA,0x11D1,0x11D4,0x11D8,0x11DB,0x11DD,0x11F0,0x11F6,0x11FC,0x1205,0x1209,0x120F,0x1212,0x1214,0x121E,0x1228,0x122B,0x1230,0x1236,0x123F,0x1241,0x124D,0x124E,0x125A,0x125F,0x1260,0x1263,0x1265,0x1271,0x1284,0x128B,0x128E,0x1290,0x1296}"
+                :type ("u32" type (:type "class") nil nil))
+                nil [2424 3157])
+            ("lfsr_polynomial_masks_14" variable
+               (:dereference 1
+                :default-value "{0x2015,0x201C,0x2029,0x202F,0x203D,0x2054,0x2057,0x205D,0x205E,0x2067,0x2075,0x2079,0x2086,0x2089,0x209D,0x20A1,0x20CD,0x20CE,0x20D3,0x20D6,0x20DA,0x20EA,0x20EC,0x20F8,0x2106,0x212B,0x2130,0x213F,0x2142,0x214E,0x2163,0x2165,0x2166,0x2171,0x2174,0x2177,0x2184,0x2190,0x219F,0x21BE,0x21C3,0x21CA,0x21D7,0x21E4,0x21F5,0x21F6,0x2205,0x2221,0x2239,0x2269,0x226A,0x226F,0x2271,0x227D,0x2295,0x229C,0x22AC,0x22B7,0x22CC,0x22CF,0x22D2,0x22DB,0x22E2,0x22EB,0x22F3,0x22F9,0x22FF,0x2307,0x230E,0x2313,0x231A,0x2323,0x232C,0x2331,0x2338,0x233D,0x2352,0x2362,0x2367,0x236D,0x2398,0x23A7,0x23BF,0x23D3,0x23E0,0x23F2,0x23F4,0x23F7,0x2409,0x240C,0x241D,0x2421,0x242D,0x2430,0x2433,0x243F,0x2441,0x2471,0x248E,0x2496}"
+                :type ("u32" type (:type "class") nil nil))
+                nil [3158 3891])
+            ("lfsr_polynomial_masks_15" variable
+               (:dereference 1
+                :default-value "{0x4001,0x4008,0x400B,0x4016,0x401A,0x402F,0x403B,0x4040,0x4043,0x4049,0x4052,0x4061,0x4067,0x406E,0x4073,0x407A,0x4080,0x408A,0x4092,0x40AB,0x40AE,0x40B0,0x40B6,0x40C2,0x40D0,0x40D3,0x40DC,0x40E5,0x40E6,0x40EF,0x40FE,0x4109,0x411D,0x4122,0x413F,0x4144,0x4147,0x414D,0x4165,0x416C,0x418B,0x418D,0x4195,0x4199,0x41A3,0x41A6,0x41AF,0x41B1,0x41B4,0x41B8,0x41C5,0x41CC,0x41D7,0x41DE,0x41E2,0x41E8,0x420C,0x4211,0x4217,0x4218,0x421B,0x4233,0x4236,0x423C,0x4241,0x424B,0x4250,0x425A,0x426F,0x427B,0x427E,0x428E,0x4290,0x4293,0x4299,0x42A3,0x42A5,0x42AF,0x42B8,0x42BD,0x42C0,0x42C6,0x42D1,0x42D8,0x42E2,0x42E4,0x42ED,0x42F6,0x42F9,0x4304,0x4308,0x430E,0x4315,0x432A,0x432C,0x4332,0x433E,0x4340,0x4354,0x4357}"
+                :type ("u32" type (:type "class") nil nil))
+                nil [3892 4625])
+            ("lfsr_polynomial_masks_16" variable
+               (:dereference 1
+                :default-value "{0x8016,0x801C,0x801F,0x8029,0x805E,0x806B,0x8097,0x809E,0x80A7,0x80AE,0x80CB,0x80D0,0x80D6,0x80DF,0x80E3,0x810A,0x810C,0x8112,0x8117,0x812E,0x8136,0x8142,0x8148,0x8150,0x8172,0x818E,0x81A5,0x81B4,0x81B8,0x81C3,0x81C6,0x81CF,0x81D1,0x81EE,0x81FC,0x8214,0x822B,0x8233,0x8241,0x8244,0x8248,0x825F,0x8260,0x8299,0x82A3,0x82B4,0x82C3,0x82E1,0x82EE,0x82F5,0x8320,0x8325,0x8329,0x8345,0x8361,0x83B5,0x83B6,0x83BC,0x83C1,0x83F8,0x8406,0x8430,0x845F,0x846A,0x846F,0x8471,0x8478,0x847D,0x849C,0x84BE,0x84C5,0x84D2,0x84D7,0x84E1,0x84E2,0x84F3,0x84F9,0x853E,0x8540,0x855D,0x8562,0x8580,0x8589,0x858A,0x85A8,0x85AE,0x85E6,0x85E9,0x85F2,0x8607,0x860E,0x8610,0x8634,0x8638,0x863D,0x8646,0x864A,0x8651,0x8657,0x8679}"
+                :type ("u32" type (:type "class") nil nil))
+                nil [4626 5359])
+            ("lfsr_polynomial_masks_17" variable
+               (:dereference 1
+                :default-value "{0x10004,0x10007,0x10010,0x10016,0x10019,0x1001F,0x10020,0x1002A,0x10034,0x1003D,0x10046,0x1004C,0x10051,0x10057,0x1005D,0x10062,0x1007A,0x10085,0x10086,0x1008C,0x10092,0x1009E,0x100AB,0x100B0,0x100B3,0x100B6,0x100BF,0x100C1,0x100E0,0x100E3,0x100E5,0x100EC,0x100F8,0x10106,0x10111,0x10114,0x10118,0x1011B,0x10122,0x10135,0x1013C,0x1013F,0x10141,0x10148,0x1015A,0x10163,0x1016F,0x10171,0x10174,0x1017E,0x10184,0x10188,0x1018B,0x1018D,0x10193,0x10199,0x1019A,0x101A9,0x101BB,0x101D8,0x101DB,0x101E1,0x101E8,0x101ED,0x101F5,0x10203,0x1020A,0x1020C,0x1020F,0x10217,0x1021E,0x10221,0x1022B,0x1022E,0x10230,0x10233,0x1023A,0x10242,0x10247,0x1024E,0x10255,0x1025C,0x10260,0x10266,0x1027B,0x1027D,0x1028D,0x1028E,0x10293,0x1029A,0x1029F,0x102B1,0x102B2,0x102B7,0x102C9,0x102D2,0x102DD,0x102F6,0x10302,0x1030E}"
+                :type ("u32" type (:type "class") nil nil))
+                nil [5360 6193])
+            ("lfsr_polynomial_masks_18" variable
+               (:dereference 1
+                :default-value "{0x20013,0x2001F,0x20026,0x2003D,0x20040,0x2006D,0x20073,0x20076,0x20083,0x200A7,0x200C8,0x200F1,0x200F4,0x200F7,0x20105,0x20109,0x20130,0x2013A,0x20155,0x20178,0x2018B,0x20195,0x20196,0x201BB,0x201C3,0x201CA,0x201CC,0x201D4,0x201D8,0x201E2,0x201EB,0x201F0,0x2020C,0x20218,0x2021E,0x2022D,0x2023C,0x20244,0x20250,0x20290,0x202C9,0x202CF,0x202E2,0x202ED,0x202F0,0x202FF,0x20304,0x2030E,0x20315,0x2033E,0x20346,0x20394,0x20398,0x203A8,0x203DF,0x203E6,0x203F8,0x20400,0x2041D,0x20439,0x20442,0x20465,0x2046F,0x20477,0x2047E,0x20482,0x20493,0x20496,0x204B2,0x204BD,0x204C9,0x204D1,0x204D2,0x204E4,0x204E7,0x2050E,0x20545,0x2054A,0x20562,0x20567,0x2056B,0x20570,0x2057A,0x2058C,0x20594,0x2059D,0x205A8,0x205B3,0x205C1,0x205E3,0x205EC,0x205F8,0x20625,0x20638,0x2063D,0x20676,0x2067F,0x206C2,0x206CB,0x206CD}"
+                :type ("u32" type (:type "class") nil nil))
+                nil [6194 7027])
+            ("lfsr_polynomial_masks_19" variable
+               (:dereference 1
+                :default-value "{0x40013,0x4001F,0x40023,0x40029,0x4002C,0x40031,0x40037,0x4003E,0x40049,0x40057,0x40070,0x400A1,0x400B0,0x400B5,0x400BA,0x400C2,0x400CE,0x400D0,0x400D6,0x400D9,0x400DF,0x400E3,0x400E6,0x400EF,0x40105,0x40109,0x4010C,0x40112,0x40118,0x40127,0x40128,0x40135,0x40136,0x40141,0x40142,0x4014B,0x40150,0x40190,0x401A3,0x401B4,0x401B7,0x401CF,0x401D2,0x401D4,0x401E4,0x401EB,0x401ED,0x401EE,0x401F9,0x4021B,0x40228,0x4023A,0x4023F,0x40244,0x40248,0x4025A,0x4025C,0x40269,0x4026C,0x4028E,0x40295,0x4029C,0x402A0,0x402A9,0x402AF,0x402B8,0x402BB,0x402D4,0x402DD,0x402E8,0x402EB,0x402EE,0x402F5,0x402FA,0x402FC,0x40304,0x40308,0x40319,0x40320,0x40325,0x40326,0x4032F,0x40332,0x40343,0x40345,0x4035E,0x40361,0x40368,0x40373,0x40376,0x4038A,0x4039D,0x403A2,0x403A4,0x403AB,0x403C2,0x403C8,0x403CE,0x403F7,0x403FE}"
+                :type ("u32" type (:type "class") nil nil))
+                nil [7028 7861])
+            ("lfsr_polynomial_masks_20" variable
+               (:dereference 1
+                :default-value "{0x80004,0x80029,0x80032,0x80034,0x8003D,0x80079,0x800B3,0x800B6,0x800BF,0x800C7,0x800DF,0x80111,0x80114,0x80118,0x8015C,0x80199,0x801A9,0x801AC,0x801B7,0x801E1,0x801FA,0x801FF,0x80211,0x80242,0x8024B,0x80260,0x80263,0x80266,0x80274,0x80284,0x80295,0x802CF,0x802F6,0x802F9,0x80302,0x80315,0x8031C,0x8032A,0x80338,0x8033D,0x8035B,0x8036E,0x80379,0x8038A,0x8039B,0x803A4,0x803BC,0x803EF,0x803FB,0x8040C,0x80414,0x8041B,0x80421,0x80448,0x8044D,0x80456,0x8045F,0x8048D,0x80499,0x8049C,0x804A6,0x804BD,0x804C6,0x804CC,0x804D7,0x804E7,0x804EE,0x804F0,0x80504,0x80513,0x8051A,0x80526,0x80529,0x80534,0x80543,0x8054A,0x80558,0x80568,0x8057A,0x805BC,0x805C1,0x805EA,0x805EC,0x80608,0x80637,0x8065B,0x8069D,0x8069E,0x806D0,0x80705,0x80718,0x80733,0x80735,0x80741,0x80753,0x80769,0x8076F,0x80799,0x807A5,0x807B8}"
+                :type ("u32" type (:type "class") nil nil))
+                nil [7862 8695])
+            ("lfsr_polynomial_masks_21" variable
+               (:dereference 1
+                :default-value "{0x100002,0x100013,0x10001F,0x100032,0x100037,0x10003D,0x10003E,0x100049,0x10005B,0x100083,0x10008F,0x10009D,0x1000A4,0x1000A7,0x1000B6,0x1000B9,0x1000C2,0x1000CB,0x1000CE,0x1000D3,0x1000D5,0x1000DA,0x1000DC,0x1000F1,0x1000F7,0x10010C,0x100112,0x10011B,0x10011E,0x10012D,0x100139,0x100156,0x100169,0x100184,0x10018D,0x1001A9,0x1001B1,0x1001BB,0x1001CF,0x1001D1,0x1001D7,0x1001DD,0x1001E2,0x1001EE,0x10020A,0x10020C,0x100211,0x100224,0x10022E,0x10023A,0x100248,0x10024B,0x100253,0x100272,0x100274,0x100277,0x10027E,0x100287,0x100295,0x1002AA,0x1002DB,0x1002EB,0x1002F0,0x1002F5,0x1002F6,0x100308,0x10031F,0x100329,0x100345,0x10035D,0x100361,0x10036B,0x100370,0x10037F,0x1003A1,0x1003AE,0x1003B5,0x1003BA,0x1003CB,0x1003D5,0x1003D9,0x1003E0,0x1003E6,0x1003E9,0x100406,0x100409,0x10040A,0x100427,0x100430,0x100441,0x100448,0x10044B,0x100455,0x10045C,0x10046F,0x100478,0x10047D,0x10049A,0x1004AC,0x1004B2}"
+                :type ("u32" type (:type "class") nil nil))
+                nil [8696 9629])
+            ("lfsr_polynomial_masks_22" variable
+               (:dereference 1
+                :default-value "{0x200001,0x20001C,0x20005E,0x200061,0x200094,0x2000B0,0x2000B9,0x2000C7,0x2000D9,0x2000F8,0x200111,0x200133,0x200156,0x20015A,0x200182,0x200188,0x2001A5,0x2001B4,0x2001C0,0x2001DB,0x2001E7,0x2001EB,0x2001ED,0x200209,0x200239,0x200244,0x200272,0x200287,0x20028D,0x20029F,0x2002A3,0x2002BD,0x2002C3,0x2002C6,0x2002CC,0x2002DD,0x20030B,0x20030D,0x200332,0x200345,0x200358,0x200361,0x20036D,0x200398,0x2003B5,0x2003BF,0x2003C2,0x2003E3,0x2003EC,0x2003FD,0x200403,0x200414,0x200427,0x200433,0x20044B,0x200459,0x200460,0x200463,0x200481,0x20049F,0x2004BE,0x2004C6,0x2004D7,0x2004DD,0x2004E1,0x2004E2,0x2004ED,0x2004FA,0x200515,0x20051C,0x20053E,0x20054A,0x20054F,0x20056E,0x200575,0x200576,0x20057C,0x200589,0x2005A4,0x2005AD,0x2005B3,0x2005B6,0x2005BA,0x2005BF,0x2005EC,0x2005EF,0x200616,0x200623,0x200634,0x20064A,0x20064C,0x20064F,0x200651,0x200667,0x20066B,0x200685,0x200697,0x20069B,0x20069E,0x2006A8}"
+                :type ("u32" type (:type "class") nil nil))
+                nil [9630 10563])
+            ("lfsr_polynomial_masks_23" variable
+               (:dereference 1
+                :default-value "{0x400010,0x400015,0x400016,0x400019,0x40001F,0x400026,0x400032,0x40003B,0x400043,0x400045,0x40004C,0x400051,0x40005E,0x400062,0x400079,0x40007C,0x400097,0x40009D,0x4000AD,0x4000B0,0x4000B3,0x4000C1,0x4000C4,0x4000FB,0x400100,0x40010F,0x400112,0x400124,0x400127,0x40012B,0x40012D,0x400136,0x40013C,0x400147,0x400148,0x40015C,0x40016F,0x400177,0x400181,0x400193,0x400196,0x4001A0,0x4001B2,0x4001D1,0x4001D2,0x4001D8,0x4001DE,0x4001F6,0x400206,0x400214,0x400228,0x400247,0x400260,0x40026F,0x400293,0x400295,0x4002A0,0x4002B7,0x4002D2,0x4002D4,0x4002E2,0x4002F0,0x400308,0x40030E,0x40032F,0x400331,0x400340,0x40035D,0x400362,0x40036D,0x40036E,0x400376,0x400379,0x400389,0x40038A,0x400391,0x40039B,0x4003BF,0x4003D0,0x4003DA,0x4003EF,0x4003F2,0x4003FB,0x4003FD,0x40041D,0x40041E,0x40042D,0x40043F,0x400444,0x40044D,0x400455,0x400456,0x400460,0x400463,0x40046A,0x400484,0x400490,0x40049C,0x4004AA,0x4004B2}"
+                :type ("u32" type (:type "class") nil nil))
+                nil [10564 11497])
+            ("lfsr_polynomial_masks_24" variable
+               (:dereference 1
+                :default-value "{0x80000D,0x800043,0x800058,0x80006D,0x80007A,0x800092,0x8000BF,0x8000DA,0x8000E5,0x800112,0x800128,0x80012B,0x800136,0x8001B1,0x8001B4,0x8001D7,0x8001E1,0x8001E7,0x8001F9,0x80020C,0x800221,0x800224,0x8002BD,0x800329,0x800345,0x80035E,0x8003A7,0x8003A8,0x8003C7,0x800412,0x80041B,0x800422,0x80042B,0x80044E,0x800453,0x80047E,0x800481,0x8004DE,0x8004ED,0x8004F6,0x800507,0x800520,0x800523,0x80053D,0x80055D,0x800579,0x800580,0x80058F,0x800594,0x80059B,0x8005A2,0x8005A4,0x8005A8,0x8005BA,0x8005D6,0x8005EA,0x800602,0x800613,0x80066E,0x80067F,0x80069B,0x8006B5,0x8006E6,0x8006E9,0x8006EF,0x8006F4,0x80070A,0x800730,0x800759,0x80075F,0x800795,0x8007BE,0x8007DE,0x8007E4,0x800806,0x800817,0x800853,0x800863,0x8008A6,0x8008D1,0x8008D7,0x8008E7,0x8008F3,0x8008FC,0x80090B,0x800916,0x80093B,0x800973,0x8009F8,0x8009FE,0x800A23,0x800A3E,0x800AA1,0x800AA7,0x800AAB,0x800AC4,0x800AD5,0x800B35,0x800B4D,0x800B87}"
+                :type ("u32" type (:type "class") nil nil))
+                nil [11498 12431])
+            ("lfsr_polynomial_masks" variable
+               (:dereference 1
+                :default-value "{
+  lfsr_polynomial_mask(0,0),
+  lfsr_polynomial_mask(0,0),
+  lfsr_polynomial_mask(0,0),
+  lfsr_polynomial_mask(0,0),
+  lfsr_polynomial_mask(sizeof(lfsr_polynomial_masks_4),lfsr_polynomial_masks_4),
+  lfsr_polynomial_mask(sizeof(lfsr_polynomial_masks_5),lfsr_polynomial_masks_5),
+  lfsr_polynomial_mask(sizeof(lfsr_polynomial_masks_6),lfsr_polynomial_masks_6),
+  lfsr_polynomial_mask(sizeof(lfsr_polynomial_masks_7),lfsr_polynomial_masks_7),
+  lfsr_polynomial_mask(sizeof(lfsr_polynomial_masks_8),lfsr_polynomial_masks_8),
+  lfsr_polynomial_mask(sizeof(lfsr_polynomial_masks_9),lfsr_polynomial_masks_9),
+  lfsr_polynomial_mask(sizeof(lfsr_polynomial_masks_10),lfsr_polynomial_masks_10),
+  lfsr_polynomial_mask(sizeof(lfsr_polynomial_masks_11),lfsr_polynomial_masks_11),
+  lfsr_polynomial_mask(sizeof(lfsr_polynomial_masks_12),lfsr_polynomial_masks_12),
+  lfsr_polynomial_mask(sizeof(lfsr_polynomial_masks_13),lfsr_polynomial_masks_13),
+  lfsr_polynomial_mask(sizeof(lfsr_polynomial_masks_14),lfsr_polynomial_masks_14),
+  lfsr_polynomial_mask(sizeof(lfsr_polynomial_masks_15),lfsr_polynomial_masks_15),
+  lfsr_polynomial_mask(sizeof(lfsr_polynomial_masks_16),lfsr_polynomial_masks_16),
+  lfsr_polynomial_mask(sizeof(lfsr_polynomial_masks_17),lfsr_polynomial_masks_17),
+  lfsr_polynomial_mask(sizeof(lfsr_polynomial_masks_18),lfsr_polynomial_masks_18),
+  lfsr_polynomial_mask(sizeof(lfsr_polynomial_masks_19),lfsr_polynomial_masks_19),
+  lfsr_polynomial_mask(sizeof(lfsr_polynomial_masks_20),lfsr_polynomial_masks_20),
+  lfsr_polynomial_mask(sizeof(lfsr_polynomial_masks_21),lfsr_polynomial_masks_21),
+  lfsr_polynomial_mask(sizeof(lfsr_polynomial_masks_22),lfsr_polynomial_masks_22),
+  lfsr_polynomial_mask(sizeof(lfsr_polynomial_masks_23),lfsr_polynomial_masks_23),
+  lfsr_polynomial_mask(sizeof(lfsr_polynomial_masks_24),lfsr_polynomial_masks_24)
+}"
+                :type ("lfsr_polynomial_mask" type (:type "class") nil nil))
+                nil [12499 14396])
+            ("LFSR" function
+               (:constructor-flag t
+                :parent "LFSR"
+                :arguments 
+                  ( ("_log2_length" variable (:type "int") (reparse-symbol arg-sub-list) [14413 14430])
+                    ("random_start" variable (:type "bool") (reparse-symbol arg-sub-list) [14430 14448]))                  
+                :type ("LFSR" type (:type "class") nil nil))
+                nil [14402 15251])
+            ("LFSR" function
+               (:destructor-flag t
+                :parent "LFSR"
+                :type "void")
+                nil [15256 15287]))          
+      :file "mls.cpp"
+      :pointmax 15288
+      :fsize 15287
+      :lastmodtime '(22725 38377 596191 700000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-gmake-mode
+      :tags 
+        '( ("default_target" function (:arguments ("all")) nil [163 183])
+            (".PHONY" function (:arguments ("default_target")) nil [184 208])
+            (".NOTPARALLEL" function nil nil [279 293])
+            (".SUFFIXES" function nil nil [469 480])
+            ("SUFFIXES" variable nil nil [545 556])
+            (".SUFFIXES" function (:arguments (".hpux_make_needs_suffix_list")) nil [557 597])
+            ("$(VERBOSE)" function nil nil [640 659])
+            ("cmake_force" function nil nil [700 713])
+            (".PHONY" function (:arguments ("cmake_force")) nil [714 735])
+            ("SHELL" variable (:default-value ("/bin/sh")) nil [903 919])
+            ("CMAKE_COMMAND" variable (:default-value ("/usr/bin/cmake.exe")) nil [944 979])
+            ("RM" variable (:default-value ("/usr/bin/cmake.exe" "-E" "remove" "-f")) nil [1012 1049])
+            ("EQUALS" variable (:default-value ("=")) nil [1085 1096])
+            ("CMAKE_SOURCE_DIR" variable (:default-value ("/cygdrive/c/RTT_MLSSA")) nil [1154 1195])
+            ("CMAKE_BINARY_DIR" variable (:default-value ("/cygdrive/c/RTT_MLSSA")) nil [1252 1293])
+            ("edit_cache" function nil nil [1453 1626])
+            (".PHONY" function (:arguments ("edit_cache")) nil [1626 1646])
+            ("edit_cache/fast" function (:arguments ("edit_cache")) nil [1688 1716])
+            (".PHONY" function (:arguments ("edit_cache/fast")) nil [1717 1742])
+            ("rebuild_cache" function nil nil [1787 1976])
+            (".PHONY" function (:arguments ("rebuild_cache")) nil [1976 1999])
+            ("rebuild_cache/fast" function (:arguments ("rebuild_cache")) nil [2044 2078])
+            (".PHONY" function (:arguments ("rebuild_cache/fast")) nil [2079 2107])
+            ("all" function (:arguments ("cmake_check_build_system")) nil [2130 2397])
+            (".PHONY" function (:arguments ("all")) nil [2397 2410])
+            ("clean" function nil nil [2435 2481])
+            (".PHONY" function (:arguments ("clean")) nil [2481 2496])
+            ("clean/fast" function (:arguments ("clean")) nil [2521 2539])
+            (".PHONY" function (:arguments ("clean/fast")) nil [2540 2560])
+            ("preinstall" function (:arguments ("all")) nil [2597 2657])
+            (".PHONY" function (:arguments ("preinstall")) nil [2657 2677])
+            ("preinstall/fast" function nil nil [2714 2775])
+            (".PHONY" function (:arguments ("preinstall/fast")) nil [2775 2800])
+            ("depend" function nil nil [2817 2936])
+            (".PHONY" function (:arguments ("depend")) nil [2936 2952])
+            ("rttmlssa" function (:arguments ("cmake_check_build_system")) nil [3100 3177])
+            (".PHONY" function (:arguments ("rttmlssa")) nil [3177 3195])
+            ("rttmlssa/fast" function nil nil [3226 3318])
+            (".PHONY" function (:arguments ("rttmlssa/fast")) nil [3318 3341])
+            ("doit_all.o" function (:arguments ("doit_all.cpp.o")) nil [3342 3369])
+            (".PHONY" function (:arguments ("doit_all.o")) nil [3370 3390])
+            ("doit_all.cpp.o" function nil nil [3424 3526])
+            (".PHONY" function (:arguments ("doit_all.cpp.o")) nil [3526 3550])
+            ("doit_all.i" function (:arguments ("doit_all.cpp.i")) nil [3551 3578])
+            (".PHONY" function (:arguments ("doit_all.i")) nil [3579 3599])
+            ("doit_all.cpp.i" function nil nil [3637 3739])
+            (".PHONY" function (:arguments ("doit_all.cpp.i")) nil [3739 3763])
+            ("doit_all.s" function (:arguments ("doit_all.cpp.s")) nil [3764 3791])
+            (".PHONY" function (:arguments ("doit_all.s")) nil [3792 3812])
+            ("doit_all.cpp.s" function nil nil [3854 3956])
+            (".PHONY" function (:arguments ("doit_all.cpp.s")) nil [3956 3980])
+            ("mls.o" function (:arguments ("mls.cpp.o")) nil [3981 3998])
+            (".PHONY" function (:arguments ("mls.o")) nil [3999 4014])
+            ("mls.cpp.o" function nil nil [4048 4140])
+            (".PHONY" function (:arguments ("mls.cpp.o")) nil [4140 4159])
+            ("mls.i" function (:arguments ("mls.cpp.i")) nil [4160 4177])
+            (".PHONY" function (:arguments ("mls.i")) nil [4178 4193])
+            ("mls.cpp.i" function nil nil [4231 4323])
+            (".PHONY" function (:arguments ("mls.cpp.i")) nil [4323 4342])
+            ("mls.s" function (:arguments ("mls.cpp.s")) nil [4343 4360])
+            (".PHONY" function (:arguments ("mls.s")) nil [4361 4376])
+            ("mls.cpp.s" function nil nil [4418 4510])
+            (".PHONY" function (:arguments ("mls.cpp.s")) nil [4510 4529])
+            ("rtt_2.o" function (:arguments ("rtt_2.cpp.o")) nil [4530 4551])
+            (".PHONY" function (:arguments ("rtt_2.o")) nil [4552 4569])
+            ("rtt_2.cpp.o" function nil nil [4603 4699])
+            (".PHONY" function (:arguments ("rtt_2.cpp.o")) nil [4699 4720])
+            ("rtt_2.i" function (:arguments ("rtt_2.cpp.i")) nil [4721 4742])
+            (".PHONY" function (:arguments ("rtt_2.i")) nil [4743 4760])
+            ("rtt_2.cpp.i" function nil nil [4798 4894])
+            (".PHONY" function (:arguments ("rtt_2.cpp.i")) nil [4894 4915])
+            ("rtt_2.s" function (:arguments ("rtt_2.cpp.s")) nil [4916 4937])
+            (".PHONY" function (:arguments ("rtt_2.s")) nil [4938 4955])
+            ("rtt_2.cpp.s" function nil nil [4997 5093])
+            (".PHONY" function (:arguments ("rtt_2.cpp.s")) nil [5093 5114])
+            ("rtt_patest_wire.o" function (:arguments ("rtt_patest_wire.cpp.o")) nil [5115 5156])
+            (".PHONY" function (:arguments ("rtt_patest_wire.o")) nil [5157 5184])
+            ("rtt_patest_wire.cpp.o" function nil nil [5218 5334])
+            (".PHONY" function (:arguments ("rtt_patest_wire.cpp.o")) nil [5334 5365])
+            ("rtt_patest_wire.i" function (:arguments ("rtt_patest_wire.cpp.i")) nil [5366 5407])
+            (".PHONY" function (:arguments ("rtt_patest_wire.i")) nil [5408 5435])
+            ("rtt_patest_wire.cpp.i" function nil nil [5473 5589])
+            (".PHONY" function (:arguments ("rtt_patest_wire.cpp.i")) nil [5589 5620])
+            ("rtt_patest_wire.s" function (:arguments ("rtt_patest_wire.cpp.s")) nil [5621 5662])
+            (".PHONY" function (:arguments ("rtt_patest_wire.s")) nil [5663 5690])
+            ("rtt_patest_wire.cpp.s" function nil nil [5732 5848])
+            (".PHONY" function (:arguments ("rtt_patest_wire.cpp.s")) nil [5848 5879])
+            ("help" function nil nil [5894 6425])
+            (".PHONY" function (:arguments ("help")) nil [6425 6439])
+            ("cmake_check_build_system" function nil nil [6746 6883])
+            (".PHONY" function (:arguments ("cmake_check_build_system")) nil [6883 6917]))          
+      :file "Makefile"
+      :pointmax 6918
+      :fsize 6917
+      :lastmodtime '(22736 27543 619279 800000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [2323 2341])
+            ("math.h" include (:system-flag t) nil [2342 2359])
+            ("rtt_patest_wire.h" include nil nil [2360 2388])
+            ("WireConfig_s" type
+               (:members 
+                  ( ("isInputInterleaved" variable (:type "int") (reparse-symbol classsubparts) [2422 2445])
+                    ("isOutputInterleaved" variable (:type "int") (reparse-symbol classsubparts) [2448 2472])
+                    ("numInputChannels" variable (:type "int") (reparse-symbol classsubparts) [2475 2496])
+                    ("numOutputChannels" variable (:type "int") (reparse-symbol classsubparts) [2499 2521])
+                    ("framesPerCallback" variable (:type "int") (reparse-symbol classsubparts) [2524 2546])
+                    ("numInputUnderflows" variable (:type "int") (reparse-symbol classsubparts) [2576 2599])
+                    ("numInputOverflows" variable (:type "int") (reparse-symbol classsubparts) [2602 2624])
+                    ("numOutputUnderflows" variable (:type "int") (reparse-symbol classsubparts) [2627 2651])
+                    ("numOutputOverflows" variable (:type "int") (reparse-symbol classsubparts) [2654 2677])
+                    ("numPrimingOutputs" variable (:type "int") (reparse-symbol classsubparts) [2680 2702])
+                    ("numCallbacks" variable (:type "int") (reparse-symbol classsubparts) [2705 2722])
+                    ("mono_data_buffer" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol classsubparts) [2748 2772])
+                    ("num_samples_in_mono_data_buffer" variable (:type "int") (reparse-symbol classsubparts) [2775 2811])
+                    ("num_repetitions" variable (:type "int") (reparse-symbol classsubparts) [2814 2834])
+                    ("attentuations" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol classsubparts) [2883 2904]))                  
+                :type "struct")
+                nil [2390 2960])
+            ("WireConfig_t" type
+               (:typedef ("WireConfig_s" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [2390 2960])
+            ("global_config" variable (:type ("WireConfig_t" type (:type "class") nil nil)) nil [2962 2989])
+            ("INPUT_FORMAT" variable (:constant-flag t) nil [3034 3046])
+            ("OUTPUT_FORMAT" variable (:constant-flag t) nil [3066 3079])
+            ("INPUT_DEVICE" variable (:constant-flag t) nil [3100 3112])
+            ("OUTPUT_DEVICE" variable (:constant-flag t) nil [3160 3173])
+            ("sample_pos" variable
+               (:default-value "0"
+                :type "int")
+                nil [3438 3455])
+            ("global_finished_playing_buffer" variable
+               (:default-value "0"
+                :type ("u32" type (:type "class") nil nil))
+                nil [3456 3493])
+            ("wireCallback" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("inputBuffer" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3519 3543])
+                    ("outputBuffer" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3543 3562])
+                    ("framesPerBuffer" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [3588 3618])
+                    ("timeInfo" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("PaStreamCallbackTimeInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3644 3685])
+                    ("statusFlags" variable (:type ("PaStreamCallbackFlags" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3711 3745])
+                    ("userData" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3771 3786]))                  
+                :type "int")
+                nil [3495 5482])
+            ("create_interleaved_stereo_float_audio_sample_from_mono_float_data" function
+               (:arguments 
+                  ( ("interleaved_stereo_float_MLS_data" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [5557 5598])
+                    ("data" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [5598 5610])
+                    ("num_samples" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5610 5626])
+                    ("attenuation" variable (:type "float") (reparse-symbol arg-sub-list) [5626 5644]))                  
+                :type "void")
+                nil [5486 5810])
+            ("initialize_portaudio" function (:type "int") nil [5871 6686])
+            ("shutdown_portaudio" function (:type "void") nil [6690 6796])
+            ("stream" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("PaStream" type (:type "class") nil nil))
+                nil [6799 6823])
+            ("start_full_duplex_audio_streaming" function
+               (:arguments 
+                  ( ("sample_rate" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6867 6883])
+                    ("mono_data_buffer" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [6883 6907])
+                    ("num_samples_in_mono_data_buffer" variable (:type "float") (reparse-symbol arg-sub-list) [6907 6945]))                  
+                :type ("PaError" type (:type "class") nil nil))
+                nil [6825 9466])
+            ("CHECK_FLAG_COUNT" variable (:constant-flag t) nil [9478 9494])
+            ("stop_full_duplex_audio_streaming" function (:type ("PaError" type (:type "class") nil nil)) nil [9606 10106]))          
+      :file "rtt_patest_wire.cpp"
+      :pointmax 10107
+      :fsize 10106
+      :lastmodtime '(22725 44426 908957 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("INPUT_FORMAT" . ((symbol "paFloat32" 3048 . 3057)))
+          ("INPUT_DEVICE" . ((semantic-list "(Pa_GetDefaultInputDevice())" 3123 . 3151)))
+          ("CHECK_FLAG_COUNT" (spp-arg-list ("member") 9494 . 9502) . 
+              ((IF "if" 9509 . 9511) (semantic-list "( config->member > 0 )" 9511 . 9533) (semantic-list "{\\
+      printf(\"FLAGS SET: \" #member \" = %d\\n\",config->member);\\
+    }" 9533 . 9604)))
+          ("OUTPUT_FORMAT" . ((symbol "paFloat32" 3081 . 3090)))
+          ("OUTPUT_DEVICE" . ((semantic-list "(Pa_GetDefaultOutputDevice())" 3183 . 3212)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("rtt_2.h" include nil nil [1 19])
+            ("mls.h" include nil nil [20 36])
+            ("rtt_patest_wire.h" include nil nil [37 65])
+            ("doit_all.h" include nil nil [66 87])
+            ("pthread.h" include (:system-flag t) nil [88 108])
+            ("FULL_SAMPLE_RATE" variable (:constant-flag t) nil [118 134])
+            ("bitrate" variable
+               (:default-value "44100"
+                :type ("u32" type (:type "class") nil nil))
+                nil [237 255])
+            ("mls_num_bits" variable
+               (:default-value "16"
+                :type ("u32" type (:type "class") nil nil))
+                nil [256 276])
+            ("lfsr" variable
+               (:pointer 1
+                :default-value "0"
+                :type ("LFSR" type (:type "class") nil nil))
+                nil [310 323])
+            ("audio_is_initialized" variable
+               (:default-value "false"
+                :type "bool")
+                nil [324 356])
+            ("interleaved_stereo_float_MLS_data" variable
+               (:pointer 1
+                :type "float")
+                nil [358 399])
+            ("volume" variable
+               (:default-value "0.1f"
+                :type "float")
+                nil [401 419])
+            ("init_LFSR_MLS" function (:type "void") nil [421 802])
+            ("thread_info" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [870 877])
+                    ("thread_id" variable (:type ("pthread_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [880 900])
+                    ("thread_num" variable (:type "int") (reparse-symbol classsubparts) [948 969])
+                    ("id_string" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [1013 1033]))                  
+                :type "class")
+                nil [806 1074])
+            ("thread_audio_monitoring" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1142 1152]))                  
+                :type "void")
+                nil [1105 1264])
+            ("audio_thread_info" variable (:type ("thread_info" type (:type "class") nil nil)) nil [1267 1297])
+            ("start_audio_monitoring_thread" function (:type "void") nil [1299 2044])
+            ("wait_for_audio_monitoring_thread_to_exit" function (:type "void") nil [2048 2227])
+            ("initialize_audio_and_start_streaming" function (:type "void") nil [2231 2594])
+            ("shutdown_everything" function (:type "void") nil [2598 2759]))          
+      :file "doit_all.cpp"
+      :pointmax 2760
+      :fsize 2759
+      :lastmodtime '(22630 47943 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("FULL_SAMPLE_RATE" . ((number "0" 135 . 136)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "rtt_1.h"
+      :fsize 0
+      :lastmodtime '(22621 19329 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "doit_all.h"
+      :fsize 108
+      :lastmodtime '(22630 30062 0 0))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("vector" include (:system-flag t) nil [2 19])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [20 40])
+            ("std::vector" using (:type ("std::vector" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [41 59])
+            ("LFSR" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [74 81])
+                    ("LFSR" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("log2_length" variable (:type "int") (reparse-symbol arg-sub-list) [89 105])
+                            ("random_start" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [105 128]))                          
+                        :type ("LFSR" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [84 130])
+                    ("LFSR" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [133 141])
+                    ("taps" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [144 161])
+                    ("data" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol classsubparts) [164 176])
+                    ("num" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [179 187])
+                    ("curval" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [190 201])
+                    ("mask" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [204 213])
+                    ("lfsr_mask_used" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [216 235])
+                    ("log2_length" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [238 254]))                  
+                :type "class")
+                nil [61 310])
+            ("lfsr_polynomial_mask" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [342 349])
+                    ("lfsr_polynomial_mask" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("_num" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [373 382])
+                            ("_data" variable
+                               (:pointer 1
+                                :type ("u32" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [382 393]))                          
+                        :type ("lfsr_polynomial_mask" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [352 418])
+                    ("num" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [422 430])
+                    ("data" variable
+                       (:pointer 1
+                        :type ("u32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [433 443]))                  
+                :type "class")
+                nil [313 446]))          
+      :file "mls.h"
+      :pointmax 449
+      :fsize 448
+      :lastmodtime '(22630 37150 0 0)
+      :unmatched-syntax '((punctuation 418 . 419)))
+    (semanticdb-table "semanticdb-table"
+      :file "rtt_patest_wire.h"
+      :fsize 428
+      :lastmodtime '(22630 37846 0 0))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("Tutorial_VERSION_MAJOR" variable (:constant-flag t) nil [62 84])
+            ("Tutorial_VERSION_MINOR" variable (:constant-flag t) nil [95 117]))          
+      :file "RTT_MLSSAconfig.h"
+      :pointmax 120
+      :fsize 119
+      :lastmodtime '(22724 34021 441508 300000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("Tutorial_VERSION_MAJOR" . ((number "0" 85 . 86)))
+          ("Tutorial_VERSION_MINOR" . ((number "1" 118 . 119)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-gmake-mode
+      :tags 
+        '( ("PROG" variable (:default-value ("rtt_2")) nil [1 12])
+            ("PROG2" variable (:default-value ("mls")) nil [12 22])
+            ("PROG3" variable (:default-value ("doit_all")) nil [22 37])
+            ("PROG4" variable (:default-value ("rtt_patest_wire")) nil [37 59])
+            ("TARGET" variable (:default-value ("rtt2")) nil [60 72])
+            ("CC" variable (:default-value ("g++")) nil [72 79])
+            ("CFLAGS" variable (:default-value ("-g" "-fpermissive" "-I" "/c/cygwinz/portaudio/pa_stable_v190600_20161030/include/.")) nil [79 163])
+            ("LDFLAGS" variable (:default-value ("-I." "-L/c/cygwinz/portaudio/pa_stable_v190600_20161030/lib/.libs/." "-L/usr/local/lib")) nil [163 256])
+            ("LIBS" variable (:default-value ("-lm" "-lxcb" "-lrt" "-lportaudio" "-lwinmm")) nil [256 296])
+            ("DEPS" variable (:default-value ("Makefile")) nil [296 313])
+            ("all" function (:arguments ("$(TARGET)" "clean")) nil [314 335])
+            ("$(TARGET)" function (:arguments ("$(PROG4).o" "$(PROG2).o" "$(PROG3).o" "$(PROG).o")) nil [336 426])
+            ("$(PROG)" function (:arguments ("$(PROG).cpp" "$(PROG).h" "$(DEPS)")) nil [427 498])
+            ("$(PROG2)" function (:arguments ("$(PROG2).cpp" "$(PROG2).h" "$(DEPS)")) nil [499 573])
+            ("$(PROG3)" function (:arguments ("$(PROG3).cpp" "$(PROG3).h" "$(DEPS)")) nil [574 648])
+            ("$(PROG4)" function (:arguments ("$(PROG4).cpp" "$(PROG4).h" "$(DEPS)")) nil [649 723])
+            (".PHONY" function (:arguments ("clean" "cleanest")) nil [724 747])
+            ("clean" function nil nil [748 774])
+            ("cleanest" function (:arguments ("clean")) nil [775 805]))          
+      :file "oldMakefile"
+      :pointmax 805
+      :fsize 804
+      :lastmodtime '(22724 37423 292567 0)
+      :unmatched-syntax '((shell-command 792 . 804) (bol 791 . 791)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("Tutorial_VERSION_MAJOR" variable (:constant-flag t) nil [62 84])
+            ("Tutorial_VERSION_MINOR" variable (:constant-flag t) nil [119 141]))          
+      :file "RTT_MLSSAconfig.h.in"
+      :pointmax 168
+      :fsize 167
+      :lastmodtime '(22724 18905 567877 400000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("Tutorial_VERSION_MAJOR" . 
+              ((punctuation "@" 85 . 86) (symbol "RTT_MLSSA_VERSION_MAJOR" 86 . 109) (punctuation "@" 109 . 110)))
+          ("Tutorial_VERSION_MINOR" . 
+              ((punctuation "@" 142 . 143) (symbol "RTT_MLSSA_VERSION_MINOR" 143 . 166) (punctuation "@" 166 . 167)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("rtt_2.h" include nil nil [1 19])
+            ("mls.h" include nil nil [20 36])
+            ("lfsr_polynomial_masks_4" variable
+               (:dereference 1
+                :default-value "{0x9,0xC}"
+                :type ("u32" type (:type "class") nil nil))
+                nil [38 78])
+            ("lfsr_polynomial_masks_5" variable
+               (:dereference 1
+                :default-value "{0x12,0x14,0x17,0x1B,0x1D,0x1E}"
+                :type ("u32" type (:type "class") nil nil))
+                nil [79 141])
+            ("lfsr_polynomial_masks_6" variable
+               (:dereference 1
+                :default-value "{0x21,0x2D,0x30,0x33,0x36,0x39}"
+                :type ("u32" type (:type "class") nil nil))
+                nil [142 204])
+            ("lfsr_polynomial_masks_7" variable
+               (:dereference 1
+                :default-value "{0x41,0x44,0x47,0x48,0x4E,0x53,0x55,0x5C,0x5F,0x60,0x65,0x69,0x6A,0x72,0x77,0x78,0x7B,0x7E}"
+                :type ("u32" type (:type "class") nil nil))
+                nil [205 327])
+            ("lfsr_polynomial_masks_8" variable
+               (:dereference 1
+                :default-value "{0x8E,0x95,0x96,0xA6,0xAF,0xB1,0xB2,0xB4,0xB8,0xC3,0xC6,0xD4,0xE1,0xE7,0xF3,0xFA}"
+                :type ("u32" type (:type "class") nil nil))
+                nil [328 440])
+            ("lfsr_polynomial_masks_9" variable
+               (:dereference 1
+                :default-value "{0x108,0x10D,0x110,0x116,0x119,0x12C,0x12F,0x134,0x137,0x13B,0x13E,0x143,0x14A,0x151,0x152,0x157,0x15B,0x15E,0x167,0x168,0x16D,0x17A,0x17C,0x189,0x18A,0x18F,0x191,0x198,0x19D,0x1A7,0x1AD,0x1B0,0x1B5,0x1B6,0x1B9,0x1BF,0x1C2,0x1C7,0x1DA,0x1DC,0x1E3,0x1E5,0x1E6,0x1EA,0x1EC,0x1F1,0x1F4,0x1FD}"
+                :type ("u32" type (:type "class") nil nil))
+                nil [441 761])
+            ("lfsr_polynomial_masks_10" variable
+               (:dereference 1
+                :default-value "{0x204,0x20D,0x213,0x216,0x232,0x237,0x240,0x245,0x262,0x26B,0x273,0x279,0x27F,0x286,0x28C,0x291,0x298,0x29E,0x2A1,0x2AB,0x2B5,0x2C2,0x2C7,0x2CB,0x2D0,0x2E3,0x2F2,0x2FB,0x2FD,0x309,0x30A,0x312,0x31B,0x321,0x327,0x32D,0x33C,0x33F,0x344,0x35A,0x360,0x369,0x36F,0x37E,0x38B,0x38E,0x390,0x39C,0x3A3,0x3A6,0x3AA,0x3AC,0x3B1,0x3BE,0x3C6,0x3C9,0x3D8,0x3ED,0x3F9,0x3FC}"
+                :type ("u32" type (:type "class") nil nil))
+                nil [762 1155])
+            ("lfsr_polynomial_masks_11" variable
+               (:dereference 1
+                :default-value "{0x402,0x40B,0x415,0x416,0x423,0x431,0x432,0x438,0x43D,0x446,0x44A,0x44F,0x454,0x458,0x467,0x468,0x470,0x473,0x475,0x47A,0x486,0x489,0x492,0x494,0x49D,0x49E,0x4A2,0x4A4,0x4A8,0x4AD,0x4B9,0x4BA,0x4BF,0x4C1,0x4C7,0x4D5,0x4D6,0x4DC,0x4E3,0x4EC,0x4F2,0x4FB,0x500,0x503,0x509,0x50A,0x514,0x524,0x530,0x536,0x53C,0x53F,0x542,0x548,0x54E,0x553,0x555,0x559,0x55A,0x56A,0x56F,0x574,0x577,0x578,0x57D,0x581,0x584,0x588,0x599,0x59F,0x5A0,0x5A5,0x5AC,0x5AF,0x5B2,0x5B7,0x5BE,0x5C3,0x5C5,0x5C9,0x5CA,0x5D7,0x5DB,0x5DE,0x5E4,0x5ED,0x5EE,0x5F3,0x5F6,0x605,0x606,0x60C,0x60F,0x62B,0x630,0x635,0x639,0x642,0x644,0x64B}"
+                :type ("u32" type (:type "class") nil nil))
+                nil [1156 1789])
+            ("lfsr_polynomial_masks_12" variable
+               (:dereference 1
+                :default-value "{0x829,0x834,0x83D,0x83E,0x84C,0x868,0x875,0x883,0x88F,0x891,0x89D,0x8A7,0x8AB,0x8B0,0x8B5,0x8C2,0x8D9,0x8EC,0x8EF,0x906,0x91B,0x91E,0x933,0x939,0x93F,0x95C,0x960,0x965,0x987,0x98E,0x990,0x99C,0x99F,0x9A6,0x9B8,0x9CC,0x9D1,0x9D4,0xA03,0xA18,0xA1B,0xA27,0xA2E,0xA33,0xA3A,0xA53,0xA56,0xA69,0xA87,0xA8E,0xAA6,0xAC9,0xAE2,0xAEB,0xAEE,0xAF5,0xB04,0xB23,0xB2A,0xB2C,0xB52,0xB5E,0xB8A,0xB8C,0xBA1,0xBA2,0xBBA,0xBC4,0xBD6,0xBD9,0xBDF,0xBE0,0xC2B,0xC2E,0xC48,0xC4B,0xC5C,0xC77,0xC8D,0xC9A,0xCA0,0xCB2,0xCBD,0xCC5,0xCD8,0xCDE,0xCE4,0xCE7,0xCF3,0xD0D,0xD15,0xD19,0xD34,0xD45,0xD68,0xD70,0xD7A,0xD85,0xD89,0xD8F}"
+                :type ("u32" type (:type "class") nil nil))
+                nil [1790 2423])
+            ("lfsr_polynomial_masks_13" variable
+               (:dereference 1
+                :default-value "{0x100D,0x1013,0x101A,0x1029,0x1032,0x1037,0x1045,0x1046,0x104F,0x1052,0x1057,0x105D,0x105E,0x1061,0x1064,0x1070,0x1079,0x1086,0x108A,0x1094,0x1097,0x109D,0x10A1,0x10B3,0x10B5,0x10BC,0x10C4,0x10CB,0x10CE,0x10DF,0x10E0,0x10E3,0x10E6,0x10EF,0x10F1,0x10F8,0x10FD,0x110C,0x1112,0x111B,0x111E,0x1121,0x112D,0x112E,0x113C,0x113F,0x1144,0x114B,0x114D,0x1159,0x115F,0x1166,0x1177,0x117B,0x117D,0x1182,0x1193,0x1195,0x11A3,0x11AA,0x11AC,0x11B7,0x11B8,0x11BE,0x11C3,0x11C6,0x11CA,0x11D1,0x11D4,0x11D8,0x11DB,0x11DD,0x11F0,0x11F6,0x11FC,0x1205,0x1209,0x120F,0x1212,0x1214,0x121E,0x1228,0x122B,0x1230,0x1236,0x123F,0x1241,0x124D,0x124E,0x125A,0x125F,0x1260,0x1263,0x1265,0x1271,0x1284,0x128B,0x128E,0x1290,0x1296}"
+                :type ("u32" type (:type "class") nil nil))
+                nil [2424 3157])
+            ("lfsr_polynomial_masks_14" variable
+               (:dereference 1
+                :default-value "{0x2015,0x201C,0x2029,0x202F,0x203D,0x2054,0x2057,0x205D,0x205E,0x2067,0x2075,0x2079,0x2086,0x2089,0x209D,0x20A1,0x20CD,0x20CE,0x20D3,0x20D6,0x20DA,0x20EA,0x20EC,0x20F8,0x2106,0x212B,0x2130,0x213F,0x2142,0x214E,0x2163,0x2165,0x2166,0x2171,0x2174,0x2177,0x2184,0x2190,0x219F,0x21BE,0x21C3,0x21CA,0x21D7,0x21E4,0x21F5,0x21F6,0x2205,0x2221,0x2239,0x2269,0x226A,0x226F,0x2271,0x227D,0x2295,0x229C,0x22AC,0x22B7,0x22CC,0x22CF,0x22D2,0x22DB,0x22E2,0x22EB,0x22F3,0x22F9,0x22FF,0x2307,0x230E,0x2313,0x231A,0x2323,0x232C,0x2331,0x2338,0x233D,0x2352,0x2362,0x2367,0x236D,0x2398,0x23A7,0x23BF,0x23D3,0x23E0,0x23F2,0x23F4,0x23F7,0x2409,0x240C,0x241D,0x2421,0x242D,0x2430,0x2433,0x243F,0x2441,0x2471,0x248E,0x2496}"
+                :type ("u32" type (:type "class") nil nil))
+                nil [3158 3891])
+            ("lfsr_polynomial_masks_15" variable
+               (:dereference 1
+                :default-value "{0x4001,0x4008,0x400B,0x4016,0x401A,0x402F,0x403B,0x4040,0x4043,0x4049,0x4052,0x4061,0x4067,0x406E,0x4073,0x407A,0x4080,0x408A,0x4092,0x40AB,0x40AE,0x40B0,0x40B6,0x40C2,0x40D0,0x40D3,0x40DC,0x40E5,0x40E6,0x40EF,0x40FE,0x4109,0x411D,0x4122,0x413F,0x4144,0x4147,0x414D,0x4165,0x416C,0x418B,0x418D,0x4195,0x4199,0x41A3,0x41A6,0x41AF,0x41B1,0x41B4,0x41B8,0x41C5,0x41CC,0x41D7,0x41DE,0x41E2,0x41E8,0x420C,0x4211,0x4217,0x4218,0x421B,0x4233,0x4236,0x423C,0x4241,0x424B,0x4250,0x425A,0x426F,0x427B,0x427E,0x428E,0x4290,0x4293,0x4299,0x42A3,0x42A5,0x42AF,0x42B8,0x42BD,0x42C0,0x42C6,0x42D1,0x42D8,0x42E2,0x42E4,0x42ED,0x42F6,0x42F9,0x4304,0x4308,0x430E,0x4315,0x432A,0x432C,0x4332,0x433E,0x4340,0x4354,0x4357}"
+                :type ("u32" type (:type "class") nil nil))
+                nil [3892 4625])
+            ("lfsr_polynomial_masks_16" variable
+               (:dereference 1
+                :default-value "{0x8016,0x801C,0x801F,0x8029,0x805E,0x806B,0x8097,0x809E,0x80A7,0x80AE,0x80CB,0x80D0,0x80D6,0x80DF,0x80E3,0x810A,0x810C,0x8112,0x8117,0x812E,0x8136,0x8142,0x8148,0x8150,0x8172,0x818E,0x81A5,0x81B4,0x81B8,0x81C3,0x81C6,0x81CF,0x81D1,0x81EE,0x81FC,0x8214,0x822B,0x8233,0x8241,0x8244,0x8248,0x825F,0x8260,0x8299,0x82A3,0x82B4,0x82C3,0x82E1,0x82EE,0x82F5,0x8320,0x8325,0x8329,0x8345,0x8361,0x83B5,0x83B6,0x83BC,0x83C1,0x83F8,0x8406,0x8430,0x845F,0x846A,0x846F,0x8471,0x8478,0x847D,0x849C,0x84BE,0x84C5,0x84D2,0x84D7,0x84E1,0x84E2,0x84F3,0x84F9,0x853E,0x8540,0x855D,0x8562,0x8580,0x8589,0x858A,0x85A8,0x85AE,0x85E6,0x85E9,0x85F2,0x8607,0x860E,0x8610,0x8634,0x8638,0x863D,0x8646,0x864A,0x8651,0x8657,0x8679}"
+                :type ("u32" type (:type "class") nil nil))
+                nil [4626 5359])
+            ("lfsr_polynomial_masks_17" variable
+               (:dereference 1
+                :default-value "{0x10004,0x10007,0x10010,0x10016,0x10019,0x1001F,0x10020,0x1002A,0x10034,0x1003D,0x10046,0x1004C,0x10051,0x10057,0x1005D,0x10062,0x1007A,0x10085,0x10086,0x1008C,0x10092,0x1009E,0x100AB,0x100B0,0x100B3,0x100B6,0x100BF,0x100C1,0x100E0,0x100E3,0x100E5,0x100EC,0x100F8,0x10106,0x10111,0x10114,0x10118,0x1011B,0x10122,0x10135,0x1013C,0x1013F,0x10141,0x10148,0x1015A,0x10163,0x1016F,0x10171,0x10174,0x1017E,0x10184,0x10188,0x1018B,0x1018D,0x10193,0x10199,0x1019A,0x101A9,0x101BB,0x101D8,0x101DB,0x101E1,0x101E8,0x101ED,0x101F5,0x10203,0x1020A,0x1020C,0x1020F,0x10217,0x1021E,0x10221,0x1022B,0x1022E,0x10230,0x10233,0x1023A,0x10242,0x10247,0x1024E,0x10255,0x1025C,0x10260,0x10266,0x1027B,0x1027D,0x1028D,0x1028E,0x10293,0x1029A,0x1029F,0x102B1,0x102B2,0x102B7,0x102C9,0x102D2,0x102DD,0x102F6,0x10302,0x1030E}"
+                :type ("u32" type (:type "class") nil nil))
+                nil [5360 6193])
+            ("lfsr_polynomial_masks_18" variable
+               (:dereference 1
+                :default-value "{0x20013,0x2001F,0x20026,0x2003D,0x20040,0x2006D,0x20073,0x20076,0x20083,0x200A7,0x200C8,0x200F1,0x200F4,0x200F7,0x20105,0x20109,0x20130,0x2013A,0x20155,0x20178,0x2018B,0x20195,0x20196,0x201BB,0x201C3,0x201CA,0x201CC,0x201D4,0x201D8,0x201E2,0x201EB,0x201F0,0x2020C,0x20218,0x2021E,0x2022D,0x2023C,0x20244,0x20250,0x20290,0x202C9,0x202CF,0x202E2,0x202ED,0x202F0,0x202FF,0x20304,0x2030E,0x20315,0x2033E,0x20346,0x20394,0x20398,0x203A8,0x203DF,0x203E6,0x203F8,0x20400,0x2041D,0x20439,0x20442,0x20465,0x2046F,0x20477,0x2047E,0x20482,0x20493,0x20496,0x204B2,0x204BD,0x204C9,0x204D1,0x204D2,0x204E4,0x204E7,0x2050E,0x20545,0x2054A,0x20562,0x20567,0x2056B,0x20570,0x2057A,0x2058C,0x20594,0x2059D,0x205A8,0x205B3,0x205C1,0x205E3,0x205EC,0x205F8,0x20625,0x20638,0x2063D,0x20676,0x2067F,0x206C2,0x206CB,0x206CD}"
+                :type ("u32" type (:type "class") nil nil))
+                nil [6194 7027])
+            ("lfsr_polynomial_masks_19" variable
+               (:dereference 1
+                :default-value "{0x40013,0x4001F,0x40023,0x40029,0x4002C,0x40031,0x40037,0x4003E,0x40049,0x40057,0x40070,0x400A1,0x400B0,0x400B5,0x400BA,0x400C2,0x400CE,0x400D0,0x400D6,0x400D9,0x400DF,0x400E3,0x400E6,0x400EF,0x40105,0x40109,0x4010C,0x40112,0x40118,0x40127,0x40128,0x40135,0x40136,0x40141,0x40142,0x4014B,0x40150,0x40190,0x401A3,0x401B4,0x401B7,0x401CF,0x401D2,0x401D4,0x401E4,0x401EB,0x401ED,0x401EE,0x401F9,0x4021B,0x40228,0x4023A,0x4023F,0x40244,0x40248,0x4025A,0x4025C,0x40269,0x4026C,0x4028E,0x40295,0x4029C,0x402A0,0x402A9,0x402AF,0x402B8,0x402BB,0x402D4,0x402DD,0x402E8,0x402EB,0x402EE,0x402F5,0x402FA,0x402FC,0x40304,0x40308,0x40319,0x40320,0x40325,0x40326,0x4032F,0x40332,0x40343,0x40345,0x4035E,0x40361,0x40368,0x40373,0x40376,0x4038A,0x4039D,0x403A2,0x403A4,0x403AB,0x403C2,0x403C8,0x403CE,0x403F7,0x403FE}"
+                :type ("u32" type (:type "class") nil nil))
+                nil [7028 7861])
+            ("lfsr_polynomial_masks_20" variable
+               (:dereference 1
+                :default-value "{0x80004,0x80029,0x80032,0x80034,0x8003D,0x80079,0x800B3,0x800B6,0x800BF,0x800C7,0x800DF,0x80111,0x80114,0x80118,0x8015C,0x80199,0x801A9,0x801AC,0x801B7,0x801E1,0x801FA,0x801FF,0x80211,0x80242,0x8024B,0x80260,0x80263,0x80266,0x80274,0x80284,0x80295,0x802CF,0x802F6,0x802F9,0x80302,0x80315,0x8031C,0x8032A,0x80338,0x8033D,0x8035B,0x8036E,0x80379,0x8038A,0x8039B,0x803A4,0x803BC,0x803EF,0x803FB,0x8040C,0x80414,0x8041B,0x80421,0x80448,0x8044D,0x80456,0x8045F,0x8048D,0x80499,0x8049C,0x804A6,0x804BD,0x804C6,0x804CC,0x804D7,0x804E7,0x804EE,0x804F0,0x80504,0x80513,0x8051A,0x80526,0x80529,0x80534,0x80543,0x8054A,0x80558,0x80568,0x8057A,0x805BC,0x805C1,0x805EA,0x805EC,0x80608,0x80637,0x8065B,0x8069D,0x8069E,0x806D0,0x80705,0x80718,0x80733,0x80735,0x80741,0x80753,0x80769,0x8076F,0x80799,0x807A5,0x807B8}"
+                :type ("u32" type (:type "class") nil nil))
+                nil [7862 8695])
+            ("lfsr_polynomial_masks_21" variable
+               (:dereference 1
+                :default-value "{0x100002,0x100013,0x10001F,0x100032,0x100037,0x10003D,0x10003E,0x100049,0x10005B,0x100083,0x10008F,0x10009D,0x1000A4,0x1000A7,0x1000B6,0x1000B9,0x1000C2,0x1000CB,0x1000CE,0x1000D3,0x1000D5,0x1000DA,0x1000DC,0x1000F1,0x1000F7,0x10010C,0x100112,0x10011B,0x10011E,0x10012D,0x100139,0x100156,0x100169,0x100184,0x10018D,0x1001A9,0x1001B1,0x1001BB,0x1001CF,0x1001D1,0x1001D7,0x1001DD,0x1001E2,0x1001EE,0x10020A,0x10020C,0x100211,0x100224,0x10022E,0x10023A,0x100248,0x10024B,0x100253,0x100272,0x100274,0x100277,0x10027E,0x100287,0x100295,0x1002AA,0x1002DB,0x1002EB,0x1002F0,0x1002F5,0x1002F6,0x100308,0x10031F,0x100329,0x100345,0x10035D,0x100361,0x10036B,0x100370,0x10037F,0x1003A1,0x1003AE,0x1003B5,0x1003BA,0x1003CB,0x1003D5,0x1003D9,0x1003E0,0x1003E6,0x1003E9,0x100406,0x100409,0x10040A,0x100427,0x100430,0x100441,0x100448,0x10044B,0x100455,0x10045C,0x10046F,0x100478,0x10047D,0x10049A,0x1004AC,0x1004B2}"
+                :type ("u32" type (:type "class") nil nil))
+                nil [8696 9629])
+            ("lfsr_polynomial_masks_22" variable
+               (:dereference 1
+                :default-value "{0x200001,0x20001C,0x20005E,0x200061,0x200094,0x2000B0,0x2000B9,0x2000C7,0x2000D9,0x2000F8,0x200111,0x200133,0x200156,0x20015A,0x200182,0x200188,0x2001A5,0x2001B4,0x2001C0,0x2001DB,0x2001E7,0x2001EB,0x2001ED,0x200209,0x200239,0x200244,0x200272,0x200287,0x20028D,0x20029F,0x2002A3,0x2002BD,0x2002C3,0x2002C6,0x2002CC,0x2002DD,0x20030B,0x20030D,0x200332,0x200345,0x200358,0x200361,0x20036D,0x200398,0x2003B5,0x2003BF,0x2003C2,0x2003E3,0x2003EC,0x2003FD,0x200403,0x200414,0x200427,0x200433,0x20044B,0x200459,0x200460,0x200463,0x200481,0x20049F,0x2004BE,0x2004C6,0x2004D7,0x2004DD,0x2004E1,0x2004E2,0x2004ED,0x2004FA,0x200515,0x20051C,0x20053E,0x20054A,0x20054F,0x20056E,0x200575,0x200576,0x20057C,0x200589,0x2005A4,0x2005AD,0x2005B3,0x2005B6,0x2005BA,0x2005BF,0x2005EC,0x2005EF,0x200616,0x200623,0x200634,0x20064A,0x20064C,0x20064F,0x200651,0x200667,0x20066B,0x200685,0x200697,0x20069B,0x20069E,0x2006A8}"
+                :type ("u32" type (:type "class") nil nil))
+                nil [9630 10563])
+            ("lfsr_polynomial_masks_23" variable
+               (:dereference 1
+                :default-value "{0x400010,0x400015,0x400016,0x400019,0x40001F,0x400026,0x400032,0x40003B,0x400043,0x400045,0x40004C,0x400051,0x40005E,0x400062,0x400079,0x40007C,0x400097,0x40009D,0x4000AD,0x4000B0,0x4000B3,0x4000C1,0x4000C4,0x4000FB,0x400100,0x40010F,0x400112,0x400124,0x400127,0x40012B,0x40012D,0x400136,0x40013C,0x400147,0x400148,0x40015C,0x40016F,0x400177,0x400181,0x400193,0x400196,0x4001A0,0x4001B2,0x4001D1,0x4001D2,0x4001D8,0x4001DE,0x4001F6,0x400206,0x400214,0x400228,0x400247,0x400260,0x40026F,0x400293,0x400295,0x4002A0,0x4002B7,0x4002D2,0x4002D4,0x4002E2,0x4002F0,0x400308,0x40030E,0x40032F,0x400331,0x400340,0x40035D,0x400362,0x40036D,0x40036E,0x400376,0x400379,0x400389,0x40038A,0x400391,0x40039B,0x4003BF,0x4003D0,0x4003DA,0x4003EF,0x4003F2,0x4003FB,0x4003FD,0x40041D,0x40041E,0x40042D,0x40043F,0x400444,0x40044D,0x400455,0x400456,0x400460,0x400463,0x40046A,0x400484,0x400490,0x40049C,0x4004AA,0x4004B2}"
+                :type ("u32" type (:type "class") nil nil))
+                nil [10564 11497])
+            ("lfsr_polynomial_masks_24" variable
+               (:dereference 1
+                :default-value "{0x80000D,0x800043,0x800058,0x80006D,0x80007A,0x800092,0x8000BF,0x8000DA,0x8000E5,0x800112,0x800128,0x80012B,0x800136,0x8001B1,0x8001B4,0x8001D7,0x8001E1,0x8001E7,0x8001F9,0x80020C,0x800221,0x800224,0x8002BD,0x800329,0x800345,0x80035E,0x8003A7,0x8003A8,0x8003C7,0x800412,0x80041B,0x800422,0x80042B,0x80044E,0x800453,0x80047E,0x800481,0x8004DE,0x8004ED,0x8004F6,0x800507,0x800520,0x800523,0x80053D,0x80055D,0x800579,0x800580,0x80058F,0x800594,0x80059B,0x8005A2,0x8005A4,0x8005A8,0x8005BA,0x8005D6,0x8005EA,0x800602,0x800613,0x80066E,0x80067F,0x80069B,0x8006B5,0x8006E6,0x8006E9,0x8006EF,0x8006F4,0x80070A,0x800730,0x800759,0x80075F,0x800795,0x8007BE,0x8007DE,0x8007E4,0x800806,0x800817,0x800853,0x800863,0x8008A6,0x8008D1,0x8008D7,0x8008E7,0x8008F3,0x8008FC,0x80090B,0x800916,0x80093B,0x800973,0x8009F8,0x8009FE,0x800A23,0x800A3E,0x800AA1,0x800AA7,0x800AAB,0x800AC4,0x800AD5,0x800B35,0x800B4D,0x800B87}"
+                :type ("u32" type (:type "class") nil nil))
+                nil [11498 12431])
+            ("lfsr_polynomial_masks" variable
+               (:dereference 1
+                :default-value "{
+  lfsr_polynomial_mask(0,0),
+  lfsr_polynomial_mask(0,0),
+  lfsr_polynomial_mask(0,0),
+  lfsr_polynomial_mask(0,0),
+  lfsr_polynomial_mask(sizeof(lfsr_polynomial_masks_4),lfsr_polynomial_masks_4),
+  lfsr_polynomial_mask(sizeof(lfsr_polynomial_masks_5),lfsr_polynomial_masks_5),
+  lfsr_polynomial_mask(sizeof(lfsr_polynomial_masks_6),lfsr_polynomial_masks_6),
+  lfsr_polynomial_mask(sizeof(lfsr_polynomial_masks_7),lfsr_polynomial_masks_7),
+  lfsr_polynomial_mask(sizeof(lfsr_polynomial_masks_8),lfsr_polynomial_masks_8),
+  lfsr_polynomial_mask(sizeof(lfsr_polynomial_masks_9),lfsr_polynomial_masks_9),
+  lfsr_polynomial_mask(sizeof(lfsr_polynomial_masks_10),lfsr_polynomial_masks_10),
+  lfsr_polynomial_mask(sizeof(lfsr_polynomial_masks_11),lfsr_polynomial_masks_11),
+  lfsr_polynomial_mask(sizeof(lfsr_polynomial_masks_12),lfsr_polynomial_masks_12),
+  lfsr_polynomial_mask(sizeof(lfsr_polynomial_masks_13),lfsr_polynomial_masks_13),
+  lfsr_polynomial_mask(sizeof(lfsr_polynomial_masks_14),lfsr_polynomial_masks_14),
+  lfsr_polynomial_mask(sizeof(lfsr_polynomial_masks_15),lfsr_polynomial_masks_15),
+  lfsr_polynomial_mask(sizeof(lfsr_polynomial_masks_16),lfsr_polynomial_masks_16),
+  lfsr_polynomial_mask(sizeof(lfsr_polynomial_masks_17),lfsr_polynomial_masks_17),
+  lfsr_polynomial_mask(sizeof(lfsr_polynomial_masks_18),lfsr_polynomial_masks_18),
+  lfsr_polynomial_mask(sizeof(lfsr_polynomial_masks_19),lfsr_polynomial_masks_19),
+  lfsr_polynomial_mask(sizeof(lfsr_polynomial_masks_20),lfsr_polynomial_masks_20),
+  lfsr_polynomial_mask(sizeof(lfsr_polynomial_masks_21),lfsr_polynomial_masks_21),
+  lfsr_polynomial_mask(sizeof(lfsr_polynomial_masks_22),lfsr_polynomial_masks_22),
+  lfsr_polynomial_mask(sizeof(lfsr_polynomial_masks_23),lfsr_polynomial_masks_23),
+  lfsr_polynomial_mask(sizeof(lfsr_polynomial_masks_24),lfsr_polynomial_masks_24)
+}"
+                :type ("lfsr_polynomial_mask" type (:type "class") nil nil))
+                nil [12499 14396])
+            ("LFSR" function
+               (:constructor-flag t
+                :parent "LFSR"
+                :arguments 
+                  ( ("_log2_length" variable (:type "int") (reparse-symbol arg-sub-list) [14413 14430])
+                    ("random_start" variable (:type "bool") (reparse-symbol arg-sub-list) [14430 14448]))                  
+                :type ("LFSR" type (:type "class") nil nil))
+                nil [14402 15251])
+            ("LFSR" function
+               (:destructor-flag t
+                :parent "LFSR"
+                :type "void")
+                nil [15256 15287]))          
+      :file "mls.cpp~"
+      :pointmax 15288
+      :fsize 15287
+      :lastmodtime '(22630 37150 0 0)
+      :unmatched-syntax nil))
+  :file "!cygdrive!c!RTT_MLSSA!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

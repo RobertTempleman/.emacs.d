@@ -1,0 +1,431 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("_FEATURES_H" variable (:constant-flag t) nil [217 228])
+            ("sys/cdefs.h" include (:system-flag t) nil [230 252])
+            ("sys/features.h" include (:system-flag t) nil [253 278]))          
+      :file "features.h"
+      :pointmax 1035
+      :fsize 1034
+      :lastmodtime '(22688 21276 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_FEATURES_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "stdlib.h"
+      :fsize 12328
+      :lastmodtime '(22688 21276 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "stdio.h"
+      :fsize 30970
+      :lastmodtime '(22688 21276 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "string.h"
+      :fsize 6607
+      :lastmodtime '(22688 21276 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "inttypes.h"
+      :fsize 8856
+      :lastmodtime '(22688 21275 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "math.h"
+      :fsize 22595
+      :lastmodtime '(22688 21275 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "pthread.h"
+      :fsize 9306
+      :lastmodtime '(22688 21276 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "errno.h"
+      :fsize 174
+      :lastmodtime '(22688 21275 0 0))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("_CTYPE_H_" variable (:constant-flag t) nil [27 36])
+            ("_ansi.h" include nil nil [38 56])
+            ("sys/cdefs.h" include (:system-flag t) nil [57 79])
+            ("_EXFUN" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("isalnum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [218 226]))                  
+                :type "int")
+                nil [207 238])
+            ("_EXFUN" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("isalpha" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [250 258]))                  
+                :type "int")
+                nil [239 270])
+            ("_EXFUN" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("iscntrl" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [282 290]))                  
+                :type "int")
+                nil [271 302])
+            ("_EXFUN" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("isdigit" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [314 322]))                  
+                :type "int")
+                nil [303 334])
+            ("_EXFUN" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("isgraph" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [346 354]))                  
+                :type "int")
+                nil [335 366])
+            ("_EXFUN" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("islower" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [378 386]))                  
+                :type "int")
+                nil [367 398])
+            ("_EXFUN" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("isprint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [410 418]))                  
+                :type "int")
+                nil [399 430])
+            ("_EXFUN" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("ispunct" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [442 450]))                  
+                :type "int")
+                nil [431 462])
+            ("_EXFUN" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("isspace" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [474 482]))                  
+                :type "int")
+                nil [463 494])
+            ("_EXFUN" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("isupper" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [506 514]))                  
+                :type "int")
+                nil [495 526])
+            ("_EXFUN" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("isxdigit" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [538 547]))                  
+                :type "int")
+                nil [527 558])
+            ("_EXFUN" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("tolower" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [570 578]))                  
+                :type "int")
+                nil [559 590])
+            ("_EXFUN" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("toupper" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [604 612]))                  
+                :type "int")
+                nil [593 624])
+            ("_U" variable (:constant-flag t) nil [1725 1727])
+            ("_L" variable (:constant-flag t) nil [1739 1741])
+            ("_N" variable (:constant-flag t) nil [1753 1755])
+            ("_S" variable (:constant-flag t) nil [1767 1769])
+            ("_P" variable (:constant-flag t) nil [1782 1784])
+            ("_C" variable (:constant-flag t) nil [1797 1799])
+            ("_X" variable (:constant-flag t) nil [1812 1814])
+            ("_B" variable (:constant-flag t) nil [1828 1830])
+            ("__locale_ctype_ptr" function
+               (:prototype-flag t
+                :pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1869 1874]))                  
+                :type "char")
+                nil [1837 1875])
+            ("__CTYPE_PTR" variable (:constant-flag t) nil [1885 1896])
+            ("_ctype_" variable
+               (:dereference 1
+                :type "char")
+                nil [5925 5940]))          
+      :file "ctype.h"
+      :pointmax 5977
+      :fsize 5974
+      :lastmodtime '(22688 21275 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_B" . ((number "0200" 1829 . 1833)))
+          ("_P" . ((number "020" 1783 . 1786)))
+          ("_C" . ((number "040" 1798 . 1801)))
+          ("_S" . ((number "010" 1768 . 1771)))
+          ("_U" . ((number "01" 1726 . 1728)))
+          ("__CTYPE_PTR" . ((semantic-list "(__locale_ctype_ptr ())" 1895 . 1918)))
+          ("_X" . ((number "0100" 1813 . 1817)))
+          ("_CTYPE_H_")
+          ("_L" . ((number "02" 1740 . 1742)))
+          ("_N" . ((number "04" 1754 . 1756)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "strings.h"
+      :fsize 1365
+      :lastmodtime '(22688 21276 0 0))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("_TIME_H_" variable (:constant-flag t) nil [107 115])
+            ("_ansi.h" include nil nil [117 135])
+            ("sys/cdefs.h" include (:system-flag t) nil [136 158])
+            ("sys/reent.h" include (:system-flag t) nil [159 181])
+            ("__need_size_t" variable (:constant-flag t) nil [191 204])
+            ("__need_NULL" variable (:constant-flag t) nil [213 224])
+            ("stddef.h" include (:system-flag t) nil [225 244])
+            ("machine/time.h" include (:system-flag t) nil [273 298])
+            ("_CLOCKS_PER_SEC_" variable (:constant-flag t) nil [333 349])
+            ("CLOCKS_PER_SEC" variable (:constant-flag t) nil [371 385])
+            ("CLK_TCK" variable (:constant-flag t) nil [411 418])
+            ("sys/types.h" include (:system-flag t) nil [435 457])
+            ("sys/timespec.h" include (:system-flag t) nil [458 483])
+            ("tm" type
+               (:members 
+                  ( ("tm_sec" variable (:type "int") (reparse-symbol classsubparts) [576 587])
+                    ("tm_min" variable (:type "int") (reparse-symbol classsubparts) [590 601])
+                    ("tm_hour" variable (:type "int") (reparse-symbol classsubparts) [604 616])
+                    ("tm_mday" variable (:type "int") (reparse-symbol classsubparts) [619 631])
+                    ("tm_mon" variable (:type "int") (reparse-symbol classsubparts) [634 645])
+                    ("tm_year" variable (:type "int") (reparse-symbol classsubparts) [648 660])
+                    ("tm_wday" variable (:type "int") (reparse-symbol classsubparts) [663 675])
+                    ("tm_yday" variable (:type "int") (reparse-symbol classsubparts) [678 690])
+                    ("tm_isdst" variable (:type "int") (reparse-symbol classsubparts) [693 706]))                  
+                :type "struct")
+                nil [562 804])
+            ("_EXFUN" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("clock" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [824 830]))                  
+                :type ("clock_t" type (:type "class") nil nil))
+                nil [806 842])
+            ("_EXFUN" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("difftime" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [860 869]))                  
+                :type "double")
+                nil [843 902])
+            ("_EXFUN" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("mktime" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [920 927]))                  
+                :type ("time_t" type (:type "class") nil nil))
+                nil [903 953])
+            ("_EXFUN" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("time" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [971 976]))                  
+                :type ("time_t" type (:type "class") nil nil))
+                nil [954 999])
+            ("_EXFUN" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type ("asctime" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1035 1043]))                  
+                :type "char")
+                nil [1020 1073])
+            ("_EXFUN" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type ("ctime" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1089 1095]))                  
+                :type "char")
+                nil [1074 1122])
+            ("_EXFUN" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type ("gmtime" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1141 1148]))                  
+                :type ("tm" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [1123 1175])
+            ("_EXFUN" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type ("localtime" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1194 1204]))                  
+                :type ("tm" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [1176 1228])
+            ("_EXFUN" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("strftime" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1253 1262]))                  
+                :type ("size_t" type (:type "class") nil nil))
+                nil [1236 1380])
+            ("_EXFUN" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type ("asctime_r" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1584 1594]))                  
+                :type "char")
+                nil [1569 1649])
+            ("_EXFUN" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type ("ctime_r" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1665 1673]))                  
+                :type "char")
+                nil [1650 1700])
+            ("_EXFUN" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type ("gmtime_r" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1719 1728]))                  
+                :type ("tm" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [1701 1785])
+            ("_EXFUN" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type ("localtime_r" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1804 1816]))                  
+                :type ("tm" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [1786 1873])
+            ("_EXFUN" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("__tzinfo_type" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type ("__gettzinfo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2606 2618]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2583 2628])
+            ("__tzinfo_type" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("__tzinfo_struct" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [2470 2581])
+            ("__tzinfo_struct" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("__tznorth" variable (:type "int") (reparse-symbol classsubparts) [2505 2519])
+                    ("__tzyear" variable (:type "int") (reparse-symbol classsubparts) [2522 2535])
+                    ("__tzrule" variable
+                       (:dereference 1
+                        :type ("__tzrule_type" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2538 2564]))                  )
+                (reparse-symbol extern-c-contents) [2470 2581])
+            ("__tzrule_type" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("__tzrule_struct" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [2309 2468])
+            ("__tzrule_struct" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("ch" variable (:type "char") (reparse-symbol classsubparts) [2344 2352])
+                    ("m" variable (:type "int") (reparse-symbol classsubparts) [2355 2361])
+                    ("n" variable (:type "int") (reparse-symbol classsubparts) [2364 2370])
+                    ("d" variable (:type "int") (reparse-symbol classsubparts) [2373 2379])
+                    ("s" variable (:type "int") (reparse-symbol classsubparts) [2382 2388])
+                    ("change" variable (:type ("time_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2391 2405])
+                    ("offset" variable (:type "long") (reparse-symbol classsubparts) [2408 2420]))                  )
+                (reparse-symbol extern-c-contents) [2309 2468])
+            ("_EXFUN" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("_VOID" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type ("_tzset_r" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2278 2287]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2260 2307])
+            ("sys/features.h" include (:system-flag t) nil [4007 4032])
+            ("cygwin/time.h" include (:system-flag t) nil [4052 4076])
+            ("TIMER_ABSTIME" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6406 6419])
+            ("CLOCK_REALTIME" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6273 6287])
+            ("CLOCK_DISALLOWED" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6025 6041])
+            ("CLOCK_ALLOWED" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5821 5834])
+            ("CLOCK_DISABLED" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5708 5722])
+            ("CLOCK_ENABLED" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5629 5642]))          
+      :file "time.h"
+      :pointmax 7823
+      :fsize 7822
+      :lastmodtime '(22688 21276 0 0)
+      :unmatched-syntax '((semantic-list 2619 . 2626) (semantic-list 2288 . 2305) (symbol 1875 . 1885) (semantic-list 1817 . 1871) (semantic-list 1729 . 1783) (semantic-list 1674 . 1698) (semantic-list 1595 . 1647) (semantic-list 1263 . 1378) (semantic-list 1204 . 1226) (semantic-list 1151 . 1173) (semantic-list 1099 . 1120) (semantic-list 1045 . 1071) (semantic-list 981 . 997) (semantic-list 930 . 951) (semantic-list 870 . 900) (semantic-list 834 . 840) (symbol 548 . 560))
+      :lexical-table 
+        '(("CLOCK_ENABLED" . ((number "1" 5644 . 5645)))
+          ("CLOCKS_PER_SEC" . ((symbol "_CLOCKS_PER_SEC_" 386 . 402)))
+          ("__need_size_t")
+          ("_CLOCKS_PER_SEC_" . ((number "1000" 350 . 354)))
+          ("CLOCK_DISABLED" . ((number "0" 5723 . 5724)))
+          ("CLOCK_ALLOWED" . ((number "1" 5838 . 5839)))
+          ("_TIME_H_")
+          ("TIMER_ABSTIME" . ((number "4" 6420 . 6421)))
+          ("CLK_TCK" . ((symbol "CLOCKS_PER_SEC" 419 . 433)))
+          ("__need_NULL")
+          ("CLOCK_REALTIME" . ((semantic-list "(clockid_t)" 6288 . 6299) (number "1" 6299 . 6300)))
+          ("CLOCK_DISALLOWED" . ((number "0" 6042 . 6043)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "signal.h"
+      :fsize 819
+      :lastmodtime '(22688 21276 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "fnmatch.h"
+      :fsize 2851
+      :lastmodtime '(22688 21276 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "_ansi.h"
+      :fsize 4325
+      :lastmodtime '(22688 21275 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "assert.h"
+      :fsize 1190
+      :lastmodtime '(22688 21275 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "limits.h"
+      :fsize 16761
+      :lastmodtime '(22688 21276 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "unistd.h"
+      :fsize 89
+      :lastmodtime '(22688 21276 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "fcntl.h"
+      :fsize 1614
+      :lastmodtime '(22688 21276 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "netdb.h"
+      :fsize 10772
+      :lastmodtime '(22688 21276 0 0)))
+  :file "!usr!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

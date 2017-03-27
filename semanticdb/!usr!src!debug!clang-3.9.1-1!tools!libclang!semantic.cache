@@ -1,0 +1,149 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("clang-c/CXCompilationDatabase.h" include nil nil [1 43])
+            ("CXString.h" include nil nil [44 65])
+            ("clang/Tooling/CompilationDatabase.h" include nil nil [66 112])
+            ("cstdio" include (:system-flag t) nil [113 130])
+            ("clang" using (:type ("clang" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [132 154])
+            ("clang::tooling" using (:type ("clang::tooling" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [155 186])
+            ("clang_CompileCommand_getMappedSourceContent" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("CXString" type (:type "class") nil nil)
+                :arguments 
+                  ( ("CCmd" variable (:type ("CXCompileCommand" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4058 4080])
+                    ("I" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [4081 4092]))                  )
+                (reparse-symbol extern-c-contents) [4005 4349])
+            ("clang_CompileCommand_getMappedSourcePath" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("CXString" type (:type "class") nil nil)
+                :arguments 
+                  ( ("CCmd" variable (:type ("CXCompileCommand" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3713 3735])
+                    ("I" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3736 3747]))                  )
+                (reparse-symbol extern-c-contents) [3663 4003])
+            ("clang_CompileCommand_getNumMappedSources" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "unsigned int"
+                :arguments 
+                  ( ("CCmd" variable (:type ("CXCompileCommand" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3539 3561]))                  )
+                (reparse-symbol extern-c-contents) [3489 3661])
+            ("clang_CompileCommand_getArg" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("CXString" type (:type "class") nil nil)
+                :arguments 
+                  ( ("CCmd" variable (:type ("CXCompileCommand" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3201 3223])
+                    ("Arg" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3224 3237]))                  )
+                (reparse-symbol extern-c-contents) [3164 3487])
+            ("clang_CompileCommand_getNumArgs" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "unsigned int"
+                :arguments 
+                  ( ("CCmd" variable (:type ("CXCompileCommand" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3042 3064]))                  )
+                (reparse-symbol extern-c-contents) [3001 3162])
+            ("clang_CompileCommand_getFilename" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("CXString" type (:type "class") nil nil)
+                :arguments 
+                  ( ("CCmd" variable (:type ("CXCompileCommand" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2810 2832]))                  )
+                (reparse-symbol extern-c-contents) [2768 2999])
+            ("clang_CompileCommand_getDirectory" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("CXString" type (:type "class") nil nil)
+                :arguments 
+                  ( ("CCmd" variable (:type ("CXCompileCommand" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2576 2598]))                  )
+                (reparse-symbol extern-c-contents) [2533 2766])
+            ("clang_CompileCommands_getCommand" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("CXCompileCommand" type (:type "class") nil nil)
+                :arguments 
+                  ( ("Cmds" variable (:type ("CXCompileCommands" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2294 2317])
+                    ("I" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2318 2329]))                  )
+                (reparse-symbol extern-c-contents) [2244 2531])
+            ("clang_CompileCommands_getSize" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "unsigned int"
+                :arguments 
+                  ( ("Cmds" variable (:type ("CXCompileCommands" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2070 2093]))                  )
+                (reparse-symbol extern-c-contents) [2031 2242])
+            ("clang_CompileCommands_dispose" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("Cmds" variable (:type ("CXCompileCommands" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1944 1967]))                  )
+                (reparse-symbol extern-c-contents) [1909 2029])
+            ("clang_CompilationDatabase_getAllCompileCommands" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("CXCompileCommands" type (:type "class") nil nil)
+                :arguments 
+                  ( ("CDb" variable (:type ("CXCompilationDatabase" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1627 1653]))                  )
+                (reparse-symbol extern-c-contents) [1561 1907])
+            ("clang_CompilationDatabase_getCompileCommands" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("CXCompileCommands" type (:type "class") nil nil)
+                :arguments 
+                  ( ("CDb" variable (:type ("CXCompilationDatabase" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1191 1217])
+                    ("CompleteFileName" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1263 1292]))                  )
+                (reparse-symbol extern-c-contents) [1128 1559])
+            ("AllocatedCXCompileCommands" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("CCmd" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("CompileCommand" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [995 1028])
+                    ("AllocatedCXCompileCommands" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("Cmd" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("CompileCommand" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [1059 1091]))                          
+                        :type ("AllocatedCXCompileCommands" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [1032 1123]))                  )
+                (reparse-symbol extern-c-contents) [957 1126])
+            ("clang_CompilationDatabase_dispose" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("CDb" variable (:type ("CXCompilationDatabase" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [875 901]))                  )
+                (reparse-symbol extern-c-contents) [836 955])
+            ("clang_CompilationDatabase_fromDirectory" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("CXCompilationDatabase" type (:type "class") nil nil)
+                :arguments 
+                  ( ("BuildDir" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [322 343])
+                    ("ErrorCode" variable
+                       (:pointer 1
+                        :type ("CXCompilationDatabase_Error" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [384 423]))                  )
+                (reparse-symbol extern-c-contents) [260 834]))          
+      :file "CXCompilationDatabase.cpp"
+      :pointmax 4372
+      :fsize 4371
+      :lastmodtime '(22003 15577 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!src!debug!clang-3.9.1-1!tools!libclang!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
